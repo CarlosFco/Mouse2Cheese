@@ -46,6 +46,7 @@ public class moveUp : MonoBehaviour
     public static Sprite right;
 
     public static GameObject[] directions;
+    public Animator anim;
 
     //public Sprite sp;
 
@@ -54,6 +55,8 @@ public class moveUp : MonoBehaviour
         Screen.orientation = ScreenOrientation.LandscapeLeft;
 
         character = GameObject.Find("character");
+        anim = character.GetComponent<Animator>();
+        anim.speed = 0f;
 
         waypoint0 = GameObject.Find("Waypoint0");
         waypoint1 = GameObject.Find("Waypoint1");
@@ -284,6 +287,7 @@ public class moveUp : MonoBehaviour
 
     public void UpBtnClick()
     {
+        anim.speed = 5f;
         int i = 0;
         while (directions[i].GetComponent<SpriteRenderer>().sprite != null)
             i++;
