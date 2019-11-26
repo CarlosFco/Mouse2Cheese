@@ -276,7 +276,7 @@ public class moveUp : MonoBehaviour
         }
         else
         {
-            anim.speed = 5f;
+            anim.speed = 3f;
         }
     }
 
