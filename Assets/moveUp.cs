@@ -48,8 +48,6 @@ public class moveUp : MonoBehaviour
     public static GameObject[] directions;
     public Animator anim;
 
-    //public Sprite sp;
-
     private void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -71,7 +69,6 @@ public class moveUp : MonoBehaviour
         doneBtn = GameObject.Find("Canvas/doneBtn");
         done = doneBtn.GetComponent<Button>();
         done.interactable = false;
-        //one.GetComponent<Renderer>().enabled = false;
 
         cont = 0;
         nmovements = new int[10];
@@ -131,8 +128,6 @@ public class moveUp : MonoBehaviour
         if (Compare(waypoint3, character))
         {
             done.interactable = true;
-            //done.GetComponent<Renderer>().enabled = true;
-
         }
         texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
@@ -248,19 +243,15 @@ public class moveUp : MonoBehaviour
             {
                 case 0:
                     MoveUpFunc();
-                    //System.Threading.Thread.Sleep(1000);
                     break;
                 case 1:
                     MoveLeftFunc();
-                    //System.Threading.Thread.Sleep(1000);
                     break;
                 case 2:
                     MoveDownFunc();
-                    //System.Threading.Thread.Sleep(1000);
                     break;
                 case 3:
                     MoveRightFunc();
-                    //System.Threading.Thread.Sleep(1000);
                     break;
                 default:
                     Console.WriteLine("Default case");
