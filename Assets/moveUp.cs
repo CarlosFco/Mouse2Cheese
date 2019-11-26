@@ -283,11 +283,14 @@ public class moveUp : MonoBehaviour
             character.transform.position.Set(waypoint0.transform.position.x,
                 waypoint0.transform.position.y, waypoint0.transform.position.z);
         }
+        else
+        {
+            anim.speed = 5f;
+        }
     }
 
     public void UpBtnClick()
     {
-        anim.speed = 5f;
         int i = 0;
         while (directions[i].GetComponent<SpriteRenderer>().sprite != null)
             i++;
