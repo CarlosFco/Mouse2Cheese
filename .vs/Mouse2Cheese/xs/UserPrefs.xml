@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{D2A622E2-8ED2-853C-E7EB-A98D429F43BE}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/moveUp.cs">
     <Files>
-      <File FileName="Assets/moveUp.cs" Line="2" Column="1" />
+      <File FileName="Assets/moveUp.cs" Line="364" Column="44" />
       <File FileName="Assets/Pantalla.cs" />
       <File FileName="Assets/Level2Recognition.cs" Line="18" Column="10" />
     </Files>

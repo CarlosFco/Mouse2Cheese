@@ -359,6 +359,10 @@ public class moveUp : MonoBehaviour
             nmovements[j] = 3;
     }
 
+    public void Exit()
+    {
+        SceneManager.LoadScene("StartScreen", LoadSceneMode.Single);
 
+    }
 
 }
