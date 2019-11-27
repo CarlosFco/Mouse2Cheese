@@ -19,8 +19,11 @@ public class moveUp : MonoBehaviour
     public GameObject leftBtn;
     public GameObject rightBtn;
 
-    public static GameObject doneBtn;
+    public static GameObject doneBtn;   //the green one
     public Button done;
+
+    public static GameObject readyBtn; //the orange one
+    public Button ready;
 
     private int cont;
     public static int[] nmovements;
@@ -68,6 +71,9 @@ public class moveUp : MonoBehaviour
         doneBtn = GameObject.Find("Canvas/doneBtn");
         done = doneBtn.GetComponent<Button>();
         done.interactable = false;
+
+        readyBtn = GameObject.Find("Canvas/readyBtn");
+        ready = readyBtn.GetComponent<Button>();
 
         cont = 0;
         nmovements = new int[10];
@@ -127,6 +133,7 @@ public class moveUp : MonoBehaviour
         if (Compare(waypoint3, character))
         {
             done.interactable = true;
+            ready.interactable = false;
         }
         texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
