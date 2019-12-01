@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 27 18:26:32 CET 2019
+#Sun Dec 01 11:15:18 CET 2019
 2.path=lib/armeabi-v7a/libMonoPosixHelper.so
 14.set=NATIVE_RESOURCE
 107.baseType=DIRECTORY
