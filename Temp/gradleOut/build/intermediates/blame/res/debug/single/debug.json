@@ -36,16 +36,16 @@
         "source": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/src/main/res/mipmap-xhdpi/app_icon_round.png"
     },
     {
+        "merged": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-hdpi_app_icon.png.flat",
+        "source": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/src/main/res/mipmap-hdpi/app_icon.png"
+    },
+    {
         "merged": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
-        "merged": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-hdpi_app_icon.png.flat",
-        "source": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/src/main/res/mipmap-hdpi/app_icon.png"
     },
     {
         "merged": "/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-xxxhdpi_app_icon.png.flat",

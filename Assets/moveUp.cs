@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class moveUp : MonoBehaviour
 {
     public float movementSpeed = 3.0f;
+    public static int[] solution;
+    public bool isSolution;
 
     public static GameObject character;
 
@@ -53,6 +55,9 @@ public class moveUp : MonoBehaviour
     private void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+        solution = new int[10] {0, 0, 1, 0, -1, -1, -1, -1, -1, -1 };
+        isSolution = false;
 
         character = GameObject.Find("character");
         anim = character.GetComponent<Animator>();
@@ -145,7 +150,7 @@ public class moveUp : MonoBehaviour
             nmovements[7].ToString() +
             nmovements[8].ToString() +
             nmovements[9].ToString();
-        textoCont.text = (character.transform.position.x).ToString();
+        textoCont.text = (solution == nmovements).ToString();
 
     }
 
@@ -264,15 +269,15 @@ public class moveUp : MonoBehaviour
                     break;
             }
         }
-        for (int i = 0; i < nmovements.Length; i++)
-            nmovements[i] = -1;
-
-        for (int i = 0; i < directions.Length; i++)
+        int sol = 0;
+        for (int i = 0; i < 10; i++)
         {
-            directions[i].GetComponent<SpriteRenderer>().sprite = null;
+            if (nmovements[i] != solution[i])
+                sol = 1;
         }
-
-        if (!Compare(character, waypoint3))
+        if (sol == 0)
+            isSolution = true;
+        if (!isSolution)
         {
             float distance = character.transform.position.y - waypoint0.transform.position.y;
             character.transform.position = Vector3.MoveTowards(character.transform.position,
@@ -284,6 +289,16 @@ public class moveUp : MonoBehaviour
         {
             anim.speed = 3f;
         }
+        for (int i = 0; i < nmovements.Length; i++)
+            nmovements[i] = -1;
+
+        for (int i = 0; i < directions.Length; i++)
+        {
+            directions[i].GetComponent<SpriteRenderer>().sprite = null;
+        }
+
+        //if (!Compare(character, waypoint3))
+        
     }
 
     public void UpBtnClick()

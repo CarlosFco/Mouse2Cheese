@@ -3,12 +3,12 @@
     <Files>
       <File FileName="Assets/moveUp.cs" Line="364" Column="44" />
       <File FileName="Assets/Pantalla.cs" />
-      <File FileName="Assets/Level2Recognition.cs" Line="18" Column="10" />
+      <File FileName="Assets/Level2Recognition.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e297af35-7d32-472a-bce6-dd2e5622a422" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8dab20c7-c378-46f2-bef4-181132857306" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
