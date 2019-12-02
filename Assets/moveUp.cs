@@ -7,6 +7,10 @@ public class moveUp : MonoBehaviour
 {
     public float movementSpeed = 3.0f;
     public static int[] solution;
+    public static int[] firstStep;
+    public static int[] secondStep;
+    public static int[] thirdStep;
+    public static int[] fourthStep;
     public bool isSolution;
 
     public static GameObject character;
@@ -25,7 +29,11 @@ public class moveUp : MonoBehaviour
     public Button done;
 
     public static GameObject readyBtn; //the orange one
-    public Button ready;
+    public Button ready;    
+    public Button upInter;             //to make the butons not interactables for tutorial
+    public Button leftInter;
+    public Button downInter;
+    public Button rightInter;
 
     private int cont;
     public static int[] nmovements;
@@ -58,6 +66,10 @@ public class moveUp : MonoBehaviour
 
         solution = new int[10] {0, 0, 1, 0, -1, -1, -1, -1, -1, -1 };
         isSolution = false;
+        firstStep = new int[10] { 0, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+        secondStep = new int[10] { 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 };
+        thirdStep = new int[10] { 0, 0, 1, -1, -1, -1, -1, -1, -1, -1 };
+        fourthStep = new int[10] { 0, 0, 1, 0, -1, -1, -1, -1, -1, -1 };
 
         character = GameObject.Find("character");
         anim = character.GetComponent<Animator>();
@@ -69,9 +81,19 @@ public class moveUp : MonoBehaviour
         waypoint3 = GameObject.Find("Waypoint3");
 
         upBtn = GameObject.Find("Canvas/upBtn");
+        upInter = upBtn.GetComponent<Button>();
+
         downBtn = GameObject.Find("Canvas/downBtn");
+        downInter = downBtn.GetComponent<Button>();
+        downInter.interactable = false;
+
         leftBtn = GameObject.Find("Canvas/leftBtn");
+        leftInter = leftBtn.GetComponent<Button>();
+        leftInter.interactable = false;
+
         rightBtn = GameObject.Find("Canvas/rightBtn");
+        rightInter = rightBtn.GetComponent<Button>();
+        rightInter.interactable = false;
 
         doneBtn = GameObject.Find("Canvas/doneBtn");
         done = doneBtn.GetComponent<Button>();
@@ -79,6 +101,7 @@ public class moveUp : MonoBehaviour
 
         readyBtn = GameObject.Find("Canvas/readyBtn");
         ready = readyBtn.GetComponent<Button>();
+
 
         cont = 0;
         nmovements = new int[10];
@@ -243,7 +266,7 @@ public class moveUp : MonoBehaviour
 
     public void LevelDone()
     {
-        SceneManager.LoadScene("Reco", LoadSceneMode.Single);
+        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
 
     public void MoveGeneral()
@@ -317,6 +340,28 @@ public class moveUp : MonoBehaviour
             j++;
         if(j <= nmovements.Length)
             nmovements[j] = 0;
+
+        bool isSecond = true;
+        bool isFourth = true;
+
+        for(int k = 0; k < nmovements.Length; k++)
+        {
+            if (nmovements[k] != secondStep[k])
+                isSecond = false;
+        }
+        for(int l = 0; l < nmovements.Length; l++)
+        {
+            if (nmovements[l] != fourthStep[l])
+                isFourth = false;
+        }
+        if (isSecond)
+        {
+            upInter.interactable = false;
+            leftInter.interactable = true;
+        }
+        else if (isFourth)
+            upInter.interactable = false;
+            
     }
 
     public void LeftBtnClick()
@@ -335,7 +380,20 @@ public class moveUp : MonoBehaviour
         while (nmovements[j] != -1)
             j++;
         if (j <= nmovements.Length)
-            nmovements[j] = 1;        
+            nmovements[j] = 1;
+
+        bool isThird = true;
+
+        for (int k = 0; k < nmovements.Length; k++)
+        {
+            if (nmovements[k] != thirdStep[k])
+                isThird = false;
+        }
+        if (isThird)
+        {
+            upInter.interactable = true;
+            leftInter.interactable = false;
+        }
     }
 
     public void DownBtnClick()
