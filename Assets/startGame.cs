@@ -13,4 +13,9 @@ public class startGame : MonoBehaviour
     {
         SceneManager.LoadScene("Reco", LoadSceneMode.Single);
     }
+
+    public void GoChoose()
+    {
+        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
+    }
 }

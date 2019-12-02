@@ -283,7 +283,6 @@ GameObject:
   - component: {fileID: 732465062}
   - component: {fileID: 732465061}
   - component: {fileID: 732465060}
-  - component: {fileID: 732465063}
   - component: {fileID: 732465064}
   - component: {fileID: 732465066}
   - component: {fileID: 732465065}
@@ -354,7 +353,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 732465064}
-        m_MethodName: nextScene
+        m_MethodName: GoChoose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -399,35 +398,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732465058}
   m_CullTransparentMesh: 0
---- !u!114 &732465063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732465058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 732465064}
-          m_MethodName: nextScene
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 1
-  delegates: []
 --- !u!114 &732465064
 MonoBehaviour:
   m_ObjectHideFlags: 0
