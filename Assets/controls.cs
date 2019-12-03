@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +9,12 @@ public class controls : MonoBehaviour
     public static GameObject[] directions;
     public static int[] nmovements;
 
+    public static int[] solution2;
+
     public static Text texto;
+
+    public static GameObject character;
+    public static GameObject goal;
 
     public static GameObject direction1;
     public static GameObject direction2;
@@ -32,6 +38,9 @@ public class controls : MonoBehaviour
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+        character = GameObject.Find("character");
+        goal = GameObject.Find("goal");
 
         nmovements = new int[10];
         for (int i = 0; i < nmovements.Length; i++)
@@ -68,6 +77,9 @@ public class controls : MonoBehaviour
         done.interactable = false;
 
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
+
+        solution2 = new int[10] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1 };
+
     }
 
     // Update is called once per frame
@@ -146,6 +158,33 @@ public class controls : MonoBehaviour
             j++;
         if (j <= nmovements.Length)
             nmovements[j] = 3;
+    }
+
+    public void Moving()
+    {
+        Boolean x = true;
+        for(int i = 0; i < nmovements.Length; i++)
+        {
+            if (nmovements[i] != solution2[i])
+                x = false;
+        }
+
+        if (x)
+        {
+            float distance = goal.transform.position.y - character.transform.position.y;
+            character.transform.position = Vector3.MoveTowards(character.transform.position,
+                goal.transform.position, distance);
+            character.transform.position.Set(goal.transform.position.x,
+                goal.transform.position.y, goal.transform.position.z);
+        }
+        for (int i = 0; i < nmovements.Length; i++)
+            nmovements[i] = -1;
+
+        for (int i = 0; i < directions.Length; i++)
+        {
+            directions[i].GetComponent<SpriteRenderer>().sprite = null;
+        }
+
     }
 
     public bool Compare(GameObject way, GameObject charac)
