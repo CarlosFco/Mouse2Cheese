@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\arrayFunc.cs" />
+    <Compile Include="Assets\controls.cs" />
     <Compile Include="Assets\followThePath.cs" />
     <Compile Include="Assets\Level2Recognition.cs" />
     <Compile Include="Assets\moveUp.cs" />
