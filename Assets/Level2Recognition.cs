@@ -6,7 +6,6 @@ using Vuforia;
 
 public class Level2Recognition : MonoBehaviour, ITrackableEventHandler
 {
-
     TrackableBehaviour mTrackableBehaviour;
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -14,7 +13,7 @@ public class Level2Recognition : MonoBehaviour, ITrackableEventHandler
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             print("DETECTA");
-            SceneManager.LoadScene("Level1Scene", LoadSceneMode.Single);
+            SceneManager.LoadScene("Level2Scene", LoadSceneMode.Single);
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED && newStatus == TrackableBehaviour.Status.NO_POSE)
         {
@@ -29,14 +28,18 @@ public class Level2Recognition : MonoBehaviour, ITrackableEventHandler
     // Start is called before the first frame update
     void Start()
     {
-        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-        if (mTrackableBehaviour)
-            mTrackableBehaviour.RegisterTrackableEventHandler(this);
+        if(moveUp.superados == 1)
+        {
+            mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+            if (mTrackableBehaviour)
+                mTrackableBehaviour.RegisterTrackableEventHandler(this);
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

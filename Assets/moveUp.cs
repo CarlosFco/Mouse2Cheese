@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class moveUp : MonoBehaviour
 {
+    public static int superados;
+
     public float movementSpeed = 3.0f;
     public static int[] solution;
     public static int[] firstStep;
@@ -63,6 +65,8 @@ public class moveUp : MonoBehaviour
     private void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+        superados = 0;
 
         solution = new int[10] {0, 0, 1, 0, -1, -1, -1, -1, -1, -1 };
         isSolution = false;
@@ -311,6 +315,7 @@ public class moveUp : MonoBehaviour
         else
         {
             anim.speed = 3f;
+            superados = 1;
         }
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;

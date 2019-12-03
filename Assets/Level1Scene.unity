@@ -724,6 +724,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &550432265
 MonoBehaviour:
@@ -1455,6 +1459,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1 &1091800665
 GameObject:
@@ -1779,6 +1787,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1141007381
 MonoBehaviour:
@@ -2063,6 +2075,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1 &1336165313
 GameObject:
@@ -2212,6 +2228,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1336165319
 MonoBehaviour:
@@ -2417,6 +2437,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1 &1574515994
 GameObject:
@@ -2780,6 +2804,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1 &1877661096
 GameObject:
@@ -2923,6 +2951,10 @@ MonoBehaviour:
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  downInter: {fileID: 0}
+  rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1917703407
 MonoBehaviour:
