@@ -15,6 +15,7 @@ public class controls : MonoBehaviour
 
     public static GameObject character;
     public static GameObject goal;
+    public static Animator anim;
 
     public static GameObject direction1;
     public static GameObject direction2;
@@ -34,6 +35,21 @@ public class controls : MonoBehaviour
     public static GameObject doneBtn;   //the green one
     public Button done;
 
+    public static GameObject readyBtn;
+    public Button ready;
+
+    public static GameObject upBtn;
+    public Button upInter;
+
+    public static GameObject downBtn;
+    public Button downInter;
+
+    public static GameObject leftBtn;
+    public Button leftInter;
+
+    public static GameObject rightBtn;
+    public Button rightInter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +57,8 @@ public class controls : MonoBehaviour
 
         character = GameObject.Find("character");
         goal = GameObject.Find("goal");
+        anim = character.GetComponent<Animator>();
+        anim.speed = 0f;
 
         nmovements = new int[10];
         for (int i = 0; i < nmovements.Length; i++)
@@ -76,9 +94,28 @@ public class controls : MonoBehaviour
         done = doneBtn.GetComponent<Button>();
         done.interactable = false;
 
+        readyBtn = GameObject.Find("Canvas/readyBtn");
+        ready = readyBtn.GetComponent<Button>();
+
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
 
         solution2 = new int[10] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1 };
+
+        upBtn = GameObject.Find("Canvas/upBtn");
+        upInter = upBtn.GetComponent<Button>();
+        upInter.interactable = true;
+
+        downBtn = GameObject.Find("Canvas/downBtn");
+        downInter = downBtn.GetComponent<Button>();
+        downInter.interactable = true;
+
+        leftBtn = GameObject.Find("Canvas/leftBtn");
+        leftInter = leftBtn.GetComponent<Button>();
+        leftInter.interactable = true;
+
+        rightBtn = GameObject.Find("Canvas/rightBtn");
+        rightInter = rightBtn.GetComponent<Button>();
+        rightInter.interactable = true;
 
     }
 
@@ -86,6 +123,11 @@ public class controls : MonoBehaviour
     void Update()
     {
         texto.text = (right == null).ToString();
+        if (Compare(goal, character))
+        {
+            done.interactable = true;
+            ready.interactable = false;
+        }
     }
 
     public void UpDir()
@@ -176,6 +218,8 @@ public class controls : MonoBehaviour
                 goal.transform.position, distance);
             character.transform.position.Set(goal.transform.position.x,
                 goal.transform.position.y, goal.transform.position.z);
+            anim.speed = 3f;
+            moveUp.superados = 2;
         }
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;
