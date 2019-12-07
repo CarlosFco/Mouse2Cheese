@@ -5,13 +5,13 @@
       <File FileName="Assets/Pantalla.cs" />
       <File FileName="Assets/Level2Recognition.cs" />
       <File FileName="Assets/startGame.cs" />
-      <File FileName="Assets/controls.cs" Line="83" Column="36" />
-      <File FileName="Assets/Level3Controls.cs" Line="7" Column="1" />
+      <File FileName="Assets/controls.cs" />
+      <File FileName="Assets/Level3Controls.cs" Line="209" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ae059e73-1e1d-4553-a17c-060ba54c57f0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="73509c8d-2726-4bd3-9f70-7ad40576b9e3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

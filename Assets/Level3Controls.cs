@@ -9,7 +9,7 @@ public class Level3Controls : MonoBehaviour
     public static GameObject[] directions;
     public static int[] nmovements;
 
-    public static int[] solution2;
+    public static int[] solution3;
 
     public static Text texto;
 
@@ -76,6 +76,9 @@ public class Level3Controls : MonoBehaviour
         direction7 = GameObject.Find("direction7");
         direction8 = GameObject.Find("direction8");
         direction9 = GameObject.Find("direction9");
+        direction10 = GameObject.Find("direction10");
+        direction11 = GameObject.Find("direction11");
+        direction12 = GameObject.Find("direction12");
 
         directions = new GameObject[12];
         directions[0] = direction1;
@@ -105,7 +108,7 @@ public class Level3Controls : MonoBehaviour
 
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
 
-        solution2 = new int[12] { 0, 3, 0, 2, 0, 3, 0, 2, 0, 3, 0, -1};
+        solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1};
 
         upBtn = GameObject.Find("Canvas/upBtn");
         upInter = upBtn.GetComponent<Button>();
@@ -127,6 +130,19 @@ public class Level3Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //texto.text = (direction10.GetComponent<SpriteRenderer>().sprite == null).ToString();
+        texto.text = nmovements[0].ToString() +
+            nmovements[1].ToString() +
+            nmovements[2].ToString() +
+            nmovements[3].ToString() +
+            nmovements[4].ToString() +
+            nmovements[5].ToString() +
+            nmovements[6].ToString() +
+            nmovements[7].ToString() +
+            nmovements[8].ToString() +
+            nmovements[9].ToString() +
+            nmovements[10].ToString() +
+            nmovements[11].ToString();
         if (Compare(goal, character))
         {
             done.interactable = true;
@@ -211,15 +227,20 @@ public class Level3Controls : MonoBehaviour
         Boolean x = true;
         for (int i = 0; i < nmovements.Length; i++)
         {
-            if (nmovements[i] != solution2[i])
+            if (nmovements[i] != solution3[i])
                 x = false;
         }
 
-        if (true)
+        if (x)
         {
-            float distance = goal.transform.position.y - character.transform.position.y;
+            float distanceY = goal.transform.position.y - character.transform.position.y;
             character.transform.position = Vector3.MoveTowards(character.transform.position,
-                goal.transform.position, distance);
+                goal.transform.position, distanceY);
+
+            float distanceX = goal.transform.position.x - character.transform.position.x;
+            character.transform.position = Vector3.MoveTowards(character.transform.position,
+                goal.transform.position, distanceX);
+
             character.transform.position.Set(goal.transform.position.x,
                 goal.transform.position.y, goal.transform.position.z);
             //anim.speed = 3f;
