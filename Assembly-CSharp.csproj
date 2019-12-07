@@ -67,6 +67,7 @@
     <Compile Include="Assets\controls.cs" />
     <Compile Include="Assets\followThePath.cs" />
     <Compile Include="Assets\Level2Recognition.cs" />
+    <Compile Include="Assets\Level3Controls.cs" />
     <Compile Include="Assets\moveUp.cs" />
     <Compile Include="Assets\Pantalla.cs" />
     <Compile Include="Assets\startGame.cs" />
