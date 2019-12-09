@@ -29,7 +29,7 @@ public class controls : MonoBehaviour
     public static GameObject direction9;
 
     public static Sprite up;
-    public static Sprite down;
+    //public static Sprite down;
     public static Sprite left;
     public static Sprite right;
 
@@ -42,8 +42,8 @@ public class controls : MonoBehaviour
     public static GameObject upBtn;
     public Button upInter;
 
-    public static GameObject downBtn;
-    public Button downInter;
+    //public static GameObject downBtn;
+    //public Button downInter;
 
     public static GameObject leftBtn;
     public Button leftInter;
@@ -87,7 +87,7 @@ public class controls : MonoBehaviour
         directions[8] = direction9;
 
         up = Resources.Load<Sprite>("UpPNG");
-        down = Resources.Load<Sprite>("DownPNG");
+        //down = Resources.Load<Sprite>("DownPNG");
         left = Resources.Load<Sprite>("rotatePNG");
         right = Resources.Load<Sprite>("rotateReversePNG");
 
@@ -106,9 +106,9 @@ public class controls : MonoBehaviour
         upInter = upBtn.GetComponent<Button>();
         upInter.interactable = true;
 
-        downBtn = GameObject.Find("Canvas/downBtn");
-        downInter = downBtn.GetComponent<Button>();
-        downInter.interactable = true;
+        //downBtn = GameObject.Find("Canvas/downBtn");
+        //downInter = downBtn.GetComponent<Button>();
+        //downInter.interactable = true;
 
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
@@ -167,7 +167,7 @@ public class controls : MonoBehaviour
             nmovements[j] = 1;
     }
 
-    public void DownDir()
+    /*public void DownDir()
     {
         int i = 0;
         while (directions[i].GetComponent<SpriteRenderer>().sprite != null)
@@ -183,7 +183,7 @@ public class controls : MonoBehaviour
             j++;
         if (j <= nmovements.Length)
             nmovements[j] = 2;
-    }
+    }*/
 
     public void RightDir()
     {

@@ -23,7 +23,7 @@ public class moveUp : MonoBehaviour
     public static GameObject waypoint3;
 
     public GameObject upBtn;
-    public GameObject downBtn;
+    //public GameObject downBtn;
     public GameObject leftBtn;
     public GameObject rightBtn;
 
@@ -34,7 +34,7 @@ public class moveUp : MonoBehaviour
     public Button ready;    
     public Button upInter;             //to make the butons not interactables for tutorial
     public Button leftInter;
-    public Button downInter;
+    //public Button downInter;
     public Button rightInter;
 
     private int cont;
@@ -55,7 +55,7 @@ public class moveUp : MonoBehaviour
     public static GameObject direction9;
 
     public static Sprite up;
-    public static Sprite down;
+    //public static Sprite down;
     public static Sprite left;
     public static Sprite right;
 
@@ -87,9 +87,9 @@ public class moveUp : MonoBehaviour
         upBtn = GameObject.Find("Canvas/upBtn");
         upInter = upBtn.GetComponent<Button>();
 
-        downBtn = GameObject.Find("Canvas/downBtn");
-        downInter = downBtn.GetComponent<Button>();
-        downInter.interactable = false;
+        //downBtn = GameObject.Find("Canvas/downBtn");
+        //downInter = downBtn.GetComponent<Button>();
+        //downInter.interactable = false;
 
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
@@ -137,7 +137,7 @@ public class moveUp : MonoBehaviour
         direction9 = GameObject.Find("direction9");
 
         up = Resources.Load<Sprite>("UpPNG");
-        down = Resources.Load<Sprite>("DownPNG");
+        //down = Resources.Load<Sprite>("DownPNG");
         left = Resources.Load<Sprite>("LeftPNG");
         right = Resources.Load<Sprite>("RightPNG");
 
@@ -204,7 +204,7 @@ public class moveUp : MonoBehaviour
         } //there's no more way up
     }
 
-    public void MoveDownFunc()
+    /*public void MoveDownFunc()
     {
         //if(character.transform.position.Equals(waypoint1.transform.position)) //from waypoint1 to waypoint0
         //{
@@ -225,7 +225,7 @@ public class moveUp : MonoBehaviour
             character.transform.position.Set(waypoint1.transform.position.x, waypoint1.transform.position.y,
                 waypoint1.transform.position.z);
         } //there's no more way down
-    }
+    }*/
 
     public void MoveLeftFunc()
     {
@@ -285,9 +285,9 @@ public class moveUp : MonoBehaviour
                 case 1:
                     MoveLeftFunc();
                     break;
-                case 2:
+                /*case 2:
                     MoveDownFunc();
-                    break;
+                    break;*/
                 case 3:
                     MoveRightFunc();
                     break;
@@ -401,7 +401,7 @@ public class moveUp : MonoBehaviour
         }
     }
 
-    public void DownBtnClick()
+    /*public void DownBtnClick()
     {
         int i = 0;
         while (directions[i].GetComponent<SpriteRenderer>().sprite != null)
@@ -418,7 +418,8 @@ public class moveUp : MonoBehaviour
             j++;
         if (j <= nmovements.Length)
             nmovements[j] = 2;
-    }
+    }*/
+
     public void RigthBtnClick()
     {
         int i = 0;
