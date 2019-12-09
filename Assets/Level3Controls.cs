@@ -15,7 +15,7 @@ public class Level3Controls : MonoBehaviour
 
     public static GameObject character;
     public static GameObject goal;
-    //public static Animator anim;
+    public static Animator anim;
 
     public static GameObject direction1;
     public static GameObject direction2;
@@ -60,8 +60,8 @@ public class Level3Controls : MonoBehaviour
 
         character = GameObject.Find("character");
         goal = GameObject.Find("goal");
-        //anim = character.GetComponent<Animator>();
-        //anim.speed = 0f;
+        anim = character.GetComponent<Animator>();
+        anim.speed = 0f;
 
         nmovements = new int[12];
         for (int i = 0; i < nmovements.Length; i++)
@@ -130,8 +130,8 @@ public class Level3Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //texto.text = (direction10.GetComponent<SpriteRenderer>().sprite == null).ToString();
-        texto.text = nmovements[0].ToString() +
+        texto.text = (anim.speed).ToString();
+        /*texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
             nmovements[2].ToString() +
             nmovements[3].ToString() +
@@ -142,7 +142,7 @@ public class Level3Controls : MonoBehaviour
             nmovements[8].ToString() +
             nmovements[9].ToString() +
             nmovements[10].ToString() +
-            nmovements[11].ToString();
+            nmovements[11].ToString();*/
         if (Compare(goal, character))
         {
             done.interactable = true;
@@ -243,7 +243,7 @@ public class Level3Controls : MonoBehaviour
 
             character.transform.position.Set(goal.transform.position.x,
                 goal.transform.position.y, goal.transform.position.z);
-            //anim.speed = 3f;
+            anim.speed = 3f;
             moveUp.superados = 2;
         }
         for (int i = 0; i < nmovements.Length; i++)
