@@ -114,9 +114,9 @@ public class Level3Controls : MonoBehaviour
         upInter = upBtn.GetComponent<Button>();
         upInter.interactable = true;
 
-        downBtn = GameObject.Find("Canvas/downBtn");
+        /*downBtn = GameObject.Find("Canvas/downBtn");
         downInter = downBtn.GetComponent<Button>();
-        downInter.interactable = true;
+        downInter.interactable = true;*/
 
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
@@ -130,7 +130,7 @@ public class Level3Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.text = (anim.speed).ToString();
+        texto.text = (rightInter.interactable == true).ToString();
         /*texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
             nmovements[2].ToString() +
@@ -244,7 +244,7 @@ public class Level3Controls : MonoBehaviour
             character.transform.position.Set(goal.transform.position.x,
                 goal.transform.position.y, goal.transform.position.z);
             anim.speed = 3f;
-            moveUp.superados = 2;
+            moveUp.superados = 3;
         }
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;
