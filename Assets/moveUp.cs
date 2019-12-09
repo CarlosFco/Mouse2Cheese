@@ -138,8 +138,8 @@ public class moveUp : MonoBehaviour
 
         up = Resources.Load<Sprite>("UpPNG");
         //down = Resources.Load<Sprite>("DownPNG");
-        left = Resources.Load<Sprite>("LeftPNG");
-        right = Resources.Load<Sprite>("RightPNG");
+        left = Resources.Load<Sprite>("rotatePNG");
+        right = Resources.Load<Sprite>("rotateReversePNG");
 
         directions = new GameObject[9];
         directions[0] = direction1;
