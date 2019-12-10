@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Level3Controls : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Level3Controls : MonoBehaviour
     public static int[] nmovements;
 
     public static int[] solution3;
+    public static int[] solution4;
 
     public static Text texto;
 
@@ -109,6 +111,7 @@ public class Level3Controls : MonoBehaviour
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
 
         solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1};
+        solution4 = new int[12] { 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, -1, -1 };
 
         upBtn = GameObject.Find("Canvas/upBtn");
         upInter = upBtn.GetComponent<Button>();
@@ -130,7 +133,7 @@ public class Level3Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.text = (rightInter.interactable == true).ToString();
+        texto.text = (character == null).ToString();
         /*texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
             nmovements[2].ToString() +
@@ -225,26 +228,45 @@ public class Level3Controls : MonoBehaviour
     public void Moving()
     {
         Boolean x = true;
-        for (int i = 0; i < nmovements.Length; i++)
+        Scene scene = SceneManager.GetActiveScene();
+        if(scene.name == "level3Scene")
         {
-            if (nmovements[i] != solution3[i])
-                x = false;
-        }
+            for (int i = 0; i < nmovements.Length; i++)
+            {
+                if (nmovements[i] != solution3[i])
+                    x = false;
+            }
 
-        if (x)
+            if (x)
+            {
+                float distanceY = goal.transform.position.y - character.transform.position.y;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distanceY);
+
+                float distanceX = goal.transform.position.x - character.transform.position.x;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distanceX);
+
+                character.transform.position.Set(goal.transform.position.x,
+                    goal.transform.position.y, goal.transform.position.z);
+                anim.speed = 3f;
+                moveUp.superados = 3;
+            }
+            
+        } else if(scene.name == "level4Scene")
         {
-            float distanceY = goal.transform.position.y - character.transform.position.y;
-            character.transform.position = Vector3.MoveTowards(character.transform.position,
-                goal.transform.position, distanceY);
-
-            float distanceX = goal.transform.position.x - character.transform.position.x;
-            character.transform.position = Vector3.MoveTowards(character.transform.position,
-                goal.transform.position, distanceX);
-
-            character.transform.position.Set(goal.transform.position.x,
-                goal.transform.position.y, goal.transform.position.z);
-            anim.speed = 3f;
-            moveUp.superados = 3;
+            for (int i = 0; i < nmovements.Length; i++)
+            {
+                if (nmovements[i] != solution4[i])
+                    x = false;
+            }
+            if (x)
+            {
+                float distance = character.transform.position.x - goal.transform.position.x;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distance);
+                anim.speed = 3f;
+            }
         }
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;
@@ -253,8 +275,8 @@ public class Level3Controls : MonoBehaviour
         {
             directions[i].GetComponent<SpriteRenderer>().sprite = null;
         }
-
     }
+
     public bool Compare(GameObject way, GameObject charac)
     {
         if (((charac.transform.position.x <= way.transform.position.x + 1.0f) &&

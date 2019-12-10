@@ -248,14 +248,12 @@ MonoBehaviour:
   movementSpeed: 3
   isSolution: 0
   upBtn: {fileID: 0}
-  downBtn: {fileID: 0}
   leftBtn: {fileID: 0}
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
   upInter: {fileID: 0}
   leftInter: {fileID: 0}
-  downInter: {fileID: 0}
   rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &80308218
@@ -1541,14 +1539,12 @@ MonoBehaviour:
   movementSpeed: 3
   isSolution: 0
   upBtn: {fileID: 0}
-  downBtn: {fileID: 0}
   leftBtn: {fileID: 0}
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
   upInter: {fileID: 0}
   leftInter: {fileID: 0}
-  downInter: {fileID: 0}
   rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &891398539
@@ -2355,14 +2351,12 @@ MonoBehaviour:
   movementSpeed: 3
   isSolution: 0
   upBtn: {fileID: 0}
-  downBtn: {fileID: 0}
   leftBtn: {fileID: 0}
   rightBtn: {fileID: 0}
   done: {fileID: 0}
   ready: {fileID: 0}
   upInter: {fileID: 0}
   leftInter: {fileID: 0}
-  downInter: {fileID: 0}
   rightInter: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1502228814

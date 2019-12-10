@@ -2,24 +2,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Level3Controls.cs">
     <Files>
       <File FileName="Assets/moveUp.cs" Line="142" Column="54" />
-      <File FileName="Assets/Pantalla.cs" Line="1" Column="1" />
-      <File FileName="Assets/Level2Recognition.cs" Line="9" Column="44" />
-      <File FileName="Assets/Level3Recognition.cs" Line="31" Column="34" />
-      <File FileName="Assets/startGame.cs" Line="1" Column="1" />
-      <File FileName="Assets/controls.cs" Line="197" Column="27" />
-      <File FileName="Assets/Level3Controls.cs" Line="134" Column="40" />
+      <File FileName="Assets/Pantalla.cs" />
+      <File FileName="Assets/Level2Recognition.cs" />
+      <File FileName="Assets/Level3Recognition.cs" />
+      <File FileName="Assets/startGame.cs" />
+      <File FileName="Assets/controls.cs" />
+      <File FileName="Assets/Level3Controls.cs" Line="262" Column="14" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Mouse2Cheese" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44c6e3b9-db65-4dbc-adcf-f3d8e7e955be" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e95302a-eac3-4468-877a-c7956b73bd5b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,18 +1,18 @@
 sceneSetups:
 - path: Assets/StartScreen.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/ChooseWay.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Reco.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level1Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level2Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/level3Scene.unity
   isLoaded: 1
