@@ -10,6 +10,7 @@ public class Level3Controls : MonoBehaviour
     public static GameObject[] directions;
     public static int[] nmovements;
 
+    public static int[] solution2;
     public static int[] solution3;
     public static int[] solution4;
 
@@ -110,6 +111,7 @@ public class Level3Controls : MonoBehaviour
 
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
 
+        solution2 = new int[12] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1, -1, -1 };
         solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1};
         solution4 = new int[12] { 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, -1, -1 };
 
@@ -133,24 +135,34 @@ public class Level3Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.text = (character == null).ToString();
-        /*texto.text = nmovements[0].ToString() +
-            nmovements[1].ToString() +
-            nmovements[2].ToString() +
-            nmovements[3].ToString() +
-            nmovements[4].ToString() +
-            nmovements[5].ToString() +
-            nmovements[6].ToString() +
-            nmovements[7].ToString() +
-            nmovements[8].ToString() +
-            nmovements[9].ToString() +
-            nmovements[10].ToString() +
-            nmovements[11].ToString();*/
+        float distance = character.transform.position.x - goal.transform.position.x;
+        Scene scene = SceneManager.GetActiveScene();
+
+        texto.text = (leftInter.interactable == false).ToString();
+        /*texto.text = solution2[0].ToString() +
+            solution2[1].ToString() +
+            solution2[2].ToString() +
+            solution2[3].ToString() +
+            solution2[4].ToString() +
+            solution2[5].ToString() +
+            solution2[6].ToString() +
+            solution2[7].ToString() +
+            solution2[8].ToString() +
+            solution2[9].ToString() +
+            solution2[10].ToString() +
+            solution2[11].ToString();*/
         if (Compare(goal, character))
         {
             done.interactable = true;
             ready.interactable = false;
         }
+        leftBtn = GameObject.Find("Canvas/leftBtn");
+        leftInter = leftBtn.GetComponent<Button>();
+        leftInter.interactable = true;
+
+        rightBtn = GameObject.Find("Canvas/rightBtn");
+        rightInter = rightBtn.GetComponent<Button>();
+        rightInter.interactable = true;
     }
 
     public void UpDir()
@@ -262,12 +274,30 @@ public class Level3Controls : MonoBehaviour
             }
             if (x)
             {
-                float distance = character.transform.position.x - goal.transform.position.x;
+                float distance = character.transform.position.y - goal.transform.position.y;
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distance);
                 anim.speed = 3f;
             }
+        } else if(scene.name == "Level2Scene")
+        {
+            for(int i = 0; i < nmovements.Length; i++)
+            {
+                if (nmovements[i] != solution2[i])
+                    x = false;
+            }
+            if (x)
+            {
+                float distance = goal.transform.position.y - character.transform.position.y;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distance);
+                character.transform.position.Set(goal.transform.position.x,
+                    goal.transform.position.y, goal.transform.position.z);
+                anim.speed = 3f;
+                moveUp.superados = 2;
+            }
         }
+
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;
 
