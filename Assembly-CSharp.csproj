@@ -69,6 +69,7 @@
     <Compile Include="Assets\Level2Recognition.cs" />
     <Compile Include="Assets\Level3Controls.cs" />
     <Compile Include="Assets\Level3Recognition.cs" />
+    <Compile Include="Assets\level4Recognition.cs" />
     <Compile Include="Assets\moveUp.cs" />
     <Compile Include="Assets\Pantalla.cs" />
     <Compile Include="Assets\startGame.cs" />
@@ -79,12 +80,12 @@
     <None Include="Assets\Vuforia\Shaders\VuforiaVB_YUVNV12_YUVNV21.cginc" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\TFG.xml" />
     <None Include="Assets\Vuforia\Shaders\VuforiaVB_YUV420P_YUVYV12.cginc" />
     <None Include="Assets\Vuforia\Shaders\VuforiaVideoBackground.cginc" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\TFG.xml" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
     <None Include="Assets\Vuforia\Shaders\VuforiaVB_RGB.cginc" />
@@ -97,12 +98,6 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -13,7 +13,7 @@ public class Level3Recognition : MonoBehaviour, ITrackableEventHandler
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             print("DETECTA");
-            SceneManager.LoadScene("Level3Scene", LoadSceneMode.Single);
+            SceneManager.LoadScene("level3Scene", LoadSceneMode.Single);
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED && newStatus == TrackableBehaviour.Status.NO_POSE)
         {

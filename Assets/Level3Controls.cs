@@ -278,6 +278,7 @@ public class Level3Controls : MonoBehaviour
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distance);
                 anim.speed = 3f;
+                moveUp.superados = 4;
             }
         } else if(scene.name == "Level2Scene")
         {
