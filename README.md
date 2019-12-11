@@ -7,3 +7,4 @@ A simple game made in Unity and Vuforia to teach kids (and not kids) computation
 2. Following the first level structure, no loop os decisions.
 3. Introduction to loops.
 4. Loop level.
+5. Introduction to decisions and planification.
