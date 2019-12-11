@@ -13,6 +13,7 @@ public class Level3Controls : MonoBehaviour
     public static int[] solution2;
     public static int[] solution3;
     public static int[] solution4;
+    public static int[] solution5;
 
     public static Text texto;
 
@@ -114,6 +115,7 @@ public class Level3Controls : MonoBehaviour
         solution2 = new int[12] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1, -1, -1 };
         solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1};
         solution4 = new int[12] { 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, -1, -1 };
+        solution5 = new int[12] { 1, 0, 3, 0, 3, 0, -1, -1, -1, -1, -1, -1 };
 
         upBtn = GameObject.Find("Canvas/upBtn");
         upInter = upBtn.GetComponent<Button>();
@@ -138,7 +140,7 @@ public class Level3Controls : MonoBehaviour
         float distance = character.transform.position.x - goal.transform.position.x;
         Scene scene = SceneManager.GetActiveScene();
 
-        texto.text = (leftInter.interactable == false).ToString();
+        texto.text = (anim == null).ToString();
         /*texto.text = solution2[0].ToString() +
             solution2[1].ToString() +
             solution2[2].ToString() +
@@ -259,8 +261,8 @@ public class Level3Controls : MonoBehaviour
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distanceX);
 
-                character.transform.position.Set(goal.transform.position.x,
-                    goal.transform.position.y, goal.transform.position.z);
+                //character.transform.position.Set(goal.transform.position.x,
+                    //goal.transform.position.y, goal.transform.position.z);
                 anim.speed = 3f;
                 moveUp.superados = 3;
             }
@@ -292,10 +294,28 @@ public class Level3Controls : MonoBehaviour
                 float distance = goal.transform.position.y - character.transform.position.y;
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distance);
-                character.transform.position.Set(goal.transform.position.x,
-                    goal.transform.position.y, goal.transform.position.z);
+                //character.transform.position.Set(goal.transform.position.x,
+                    //goal.transform.position.y, goal.transform.position.z);
                 anim.speed = 3f;
                 moveUp.superados = 2;
+            }
+        } else if(scene.name == "Level5Scene")
+        {
+            for(int i = 0; i < nmovements.Length; i++)
+            {
+                if(nmovements[i] != solution5[i])
+                    x = false;
+            }
+            if (x)
+            {
+                float distanceX = goal.transform.position.x - character.transform.position.x;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distanceX);
+                float distanceY = goal.transform.position.y - character.transform.position.y;
+                character.transform.position = Vector3.MoveTowards(character.transform.position,
+                    goal.transform.position, distanceY);
+                anim.speed = 3f;
+                moveUp.superados = 5;
             }
         }
 

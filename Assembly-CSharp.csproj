@@ -99,6 +99,12 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
