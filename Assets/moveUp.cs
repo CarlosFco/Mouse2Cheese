@@ -60,7 +60,18 @@ public class moveUp : MonoBehaviour
     public static Sprite right;
 
     public static GameObject[] directions;
+
+    public GameObject firework1;
+    public GameObject firework2;
+    public GameObject firework3;
+    public GameObject firework4;
+
     public Animator anim;
+
+    public Animator fire1;
+    public Animator fire2;
+    public Animator fire3;
+    public Animator fire4;
 
     private void Start()
     {
@@ -78,6 +89,21 @@ public class moveUp : MonoBehaviour
         character = GameObject.Find("character");
         anim = character.GetComponent<Animator>();
         anim.speed = 0f;
+
+        firework1 = GameObject.Find("firework1");
+        firework2 = GameObject.Find("firework2");
+        firework3 = GameObject.Find("firework3");
+        firework4 = GameObject.Find("firework4");
+
+        fire1 = firework1.GetComponent<Animator>();
+        fire2 = firework2.GetComponent<Animator>();
+        fire3 = firework3.GetComponent<Animator>();
+        fire4 = firework4.GetComponent<Animator>();
+
+        fire1.speed = 0f;
+        fire2.speed = 0f;
+        fire3.speed = 0f;
+        fire4.speed = 0f;
 
         waypoint0 = GameObject.Find("Waypoint0");
         waypoint1 = GameObject.Find("Waypoint1");
@@ -166,6 +192,11 @@ public class moveUp : MonoBehaviour
         {
             done.interactable = true;
             ready.interactable = false;
+
+            fire1.speed = 1f;
+            fire2.speed = 1f;
+            fire3.speed = 1f;
+            fire4.speed = 1f;
         }
         texto.text = nmovements[0].ToString() +
             nmovements[1].ToString() +
@@ -440,7 +471,7 @@ public class moveUp : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("StartScreen", LoadSceneMode.Single);
+        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
 
     }
 

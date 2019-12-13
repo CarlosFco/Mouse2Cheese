@@ -58,6 +58,17 @@ public class Level3Controls : MonoBehaviour
 
     public static GameObject rightBtn;
     public Button rightInter;
+
+    public GameObject firework1;
+    public GameObject firework2;
+    public GameObject firework3;
+    public GameObject firework4;
+
+    public Animator fire1;
+    public Animator fire2;
+    public Animator fire3;
+    public Animator fire4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -134,6 +145,21 @@ public class Level3Controls : MonoBehaviour
         rightBtn = GameObject.Find("Canvas/rightBtn");
         rightInter = rightBtn.GetComponent<Button>();
         rightInter.interactable = true;
+
+        firework1 = GameObject.Find("firework1");
+        firework2 = GameObject.Find("firework2");
+        firework3 = GameObject.Find("firework3");
+        firework4 = GameObject.Find("firework4");
+
+        fire1 = firework1.GetComponent<Animator>();
+        fire2 = firework2.GetComponent<Animator>();
+        fire3 = firework3.GetComponent<Animator>();
+        fire4 = firework4.GetComponent<Animator>();
+
+        fire1.speed = 0f;
+        fire2.speed = 0f;
+        fire3.speed = 0f;
+        fire4.speed = 0f;
     }
 
     // Update is called once per frame
@@ -159,6 +185,11 @@ public class Level3Controls : MonoBehaviour
         {
             done.interactable = true;
             ready.interactable = false;
+
+            fire1.speed = 1f;
+            fire2.speed = 1f;
+            fire3.speed = 1f;
+            fire4.speed = 1f; 
         }
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
