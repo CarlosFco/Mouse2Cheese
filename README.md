@@ -8,3 +8,4 @@ A simple game made in Unity and Vuforia to teach kids (and not kids) computation
 3. Introduction to loops.
 4. Loop level.
 5. Introduction to decisions and planification.
+6. Complex level with multiple ways.
