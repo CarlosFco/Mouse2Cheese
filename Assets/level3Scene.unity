@@ -264,6 +264,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &80308218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,6 +1779,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &891398539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2803,6 +2807,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1502228814
 MonoBehaviour:
   m_ObjectHideFlags: 0

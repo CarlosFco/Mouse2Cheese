@@ -9,19 +9,29 @@ public class FailedController : MonoBehaviour
     public GameObject failedoption;
     public Animator failed;
 
+    public GameObject doneoption;
+    public Animator done;
+
     // Start is called before the first frame update
     void Start()
     {
         failedoption = GameObject.Find("Failed");
         failed = failedoption.GetComponent<Animator>();
         failed.speed = 0f;
+
+        doneoption = GameObject.Find("Done");
+        done = doneoption.GetComponent<Animator>();
+        done.speed = 0f;
     }
 
     public void Failed()
     {
-
-        //StartCoroutine(Coroutine());
         failed.speed = 1f;
+    }
+
+    public void Done()
+    {
+        done.speed = 1f;
     }
 
     public void Finished()
@@ -29,7 +39,7 @@ public class FailedController : MonoBehaviour
         failed.speed = 0f;
     }
 
-    public void Done()
+    public void LevelDone()
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
