@@ -848,6 +848,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &424618454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1345,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &618212033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +1416,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 618212032}
-        m_MethodName: LevelDone
+        m_MethodName: FifthLevelDone
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2403,6 +2407,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1483576309
 MonoBehaviour:
   m_ObjectHideFlags: 0
