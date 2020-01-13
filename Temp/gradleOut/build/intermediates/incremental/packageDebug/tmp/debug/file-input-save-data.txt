@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jan 13 13:09:16 CET 2020
+#Mon Jan 13 16:48:17 CET 2020
 124.path=bin/Data/Managed/UnityEngine.BaselibModule.dll
 60.set=NATIVE_RESOURCE
 52.set=ASSET
