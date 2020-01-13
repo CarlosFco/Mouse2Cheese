@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{D2A622E2-8ED2-853C-E7EB-A98D429F43BE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Level3Controls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/moveUp.cs">
     <Files>
       <File FileName="Assets/moveUp.cs" Line="193" Column="30" />
       <File FileName="Assets/Pantalla.cs" />
@@ -7,7 +7,7 @@
       <File FileName="Assets/Level3Recognition.cs" />
       <File FileName="Assets/level4Recognition.cs" />
       <File FileName="Assets/level5Recognition.cs" />
-      <File FileName="Assets/level6Recognition.cs" Line="31" Column="34" />
+      <File FileName="Assets/level6Recognition.cs" />
       <File FileName="Assets/startGame.cs" />
       <File FileName="Assets/controls.cs" />
       <File FileName="Assets/Level3Controls.cs" Line="356" Column="14" />
@@ -15,7 +15,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="df1d657e-3bd0-46a0-82f3-b3b9e2c64232" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="68182c0d-0668-4bb7-bc6c-337e67ef02d9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -333,7 +333,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 80308217}
-        m_MethodName: LevelDone
+        m_MethodName: ThirdLevelDone
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

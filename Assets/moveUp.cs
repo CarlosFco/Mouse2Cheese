@@ -304,6 +304,11 @@ public class moveUp : MonoBehaviour
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
 
+    public void ThirdLevelDone()
+    {
+        SceneManager.LoadScene("Level3Question", LoadSceneMode.Single);
+    }
+
     public void MoveGeneral()
     {
         foreach(int v in nmovements)
