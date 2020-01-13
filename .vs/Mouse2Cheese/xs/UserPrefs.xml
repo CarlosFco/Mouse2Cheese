@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{D2A622E2-8ED2-853C-E7EB-A98D429F43BE}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/moveUp.cs">
     <Files>
-      <File FileName="Assets/moveUp.cs" Line="193" Column="30" />
+      <File FileName="Assets/moveUp.cs" Line="113" Column="11" />
       <File FileName="Assets/Pantalla.cs" />
       <File FileName="Assets/Level2Recognition.cs" />
       <File FileName="Assets/Level3Recognition.cs" />
@@ -9,8 +9,7 @@
       <File FileName="Assets/level5Recognition.cs" />
       <File FileName="Assets/level6Recognition.cs" />
       <File FileName="Assets/startGame.cs" />
-      <File FileName="Assets/controls.cs" />
-      <File FileName="Assets/Level3Controls.cs" Line="356" Column="14" />
+      <File FileName="Assets/FailedController.cs" Line="10" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -73,6 +73,9 @@ public class moveUp : MonoBehaviour
     public Animator fire3;
     public Animator fire4;
 
+    public GameObject failedoption;
+    public Animator failed;
+
     private void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -104,6 +107,10 @@ public class moveUp : MonoBehaviour
         fire2.speed = 0f;
         fire3.speed = 0f;
         fire4.speed = 0f;
+
+        //failedoption = GameObject.Find("Failed");
+        //failed = failedoption.GetComponent<Animator>();
+        //failed.speed = 0f;
 
         waypoint0 = GameObject.Find("Waypoint0");
         waypoint1 = GameObject.Find("Waypoint1");
@@ -478,6 +485,11 @@ public class moveUp : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
 
+    }
+
+    public void Failed()
+    {
+        //failed.speed = 1f;
     }
 
 }

@@ -275,6 +275,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508912565}
+  - component: {fileID: 508912567}
+  - component: {fileID: 508912566}
+  - component: {fileID: 508912568}
   m_Layer: 0
   m_Name: Failed
   m_TagString: Untagged
@@ -296,6 +299,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &508912566
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912564}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8, y: 8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &508912567
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912564}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9a69982d800c4cb0b6b0eef3c1c219d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &508912568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &961865018
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +392,7 @@ GameObject:
   - component: {fileID: 961865022}
   - component: {fileID: 961865021}
   - component: {fileID: 961865020}
+  - component: {fileID: 961865023}
   m_Layer: 5
   m_Name: option2
   m_TagString: Untagged
@@ -374,7 +459,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 961865021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 961865023}
+        m_MethodName: Failed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &961865021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +506,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961865018}
   m_CullTransparentMesh: 0
+--- !u!114 &961865023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961865018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &1009761511
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +914,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1431508632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,6 +1175,7 @@ GameObject:
   - component: {fileID: 1849704055}
   - component: {fileID: 1849704054}
   - component: {fileID: 1849704053}
+  - component: {fileID: 1849704056}
   m_Layer: 5
   m_Name: option3
   m_TagString: Untagged
@@ -1129,7 +1242,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1849704054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849704056}
+        m_MethodName: Failed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1849704054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,6 +1289,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849704051}
   m_CullTransparentMesh: 0
+--- !u!114 &1849704056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849704051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &2063457002
 GameObject:
   m_ObjectHideFlags: 0
