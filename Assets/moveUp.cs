@@ -316,6 +316,11 @@ public class moveUp : MonoBehaviour
         SceneManager.LoadScene("Level3Question", LoadSceneMode.Single);
     }
 
+    public void FourthLevelDone()
+    {
+        SceneManager.LoadScene("Level4Question", LoadSceneMode.Single);
+    }
+
     public void MoveGeneral()
     {
         foreach(int v in nmovements)
@@ -485,11 +490,6 @@ public class moveUp : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
 
-    }
-
-    public void Failed()
-    {
-        //failed.speed = 1f;
     }
 
 }
