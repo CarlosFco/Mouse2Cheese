@@ -28,7 +28,7 @@ public class level6Recognition : MonoBehaviour, ITrackableEventHandler
     // Start is called before the first frame update
     void Start()
     {
-        if (moveUp.superados == 5)
+        if (moveUp.superados != 500)
         {
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
             if (mTrackableBehaviour)
