@@ -164,6 +164,9 @@ public class Level3Controls : MonoBehaviour
         fire3.speed = 0f;
         fire4.speed = 0f;
 
+        failedsolution = GameObject.Find("FailedLevel");
+        failed = failedsolution.GetComponent<Animator>();
+        failed.speed = 0f;
     }
 
     // Update is called once per frame
@@ -303,7 +306,11 @@ public class Level3Controls : MonoBehaviour
                 anim.speed = 3f;
                 moveUp.superados = 3;
             }
-            
+            else
+            {
+                Failed();
+            }
+
         } else if(scene.name == "level4Scene")
         {
             for (int i = 0; i < nmovements.Length; i++)
@@ -318,6 +325,10 @@ public class Level3Controls : MonoBehaviour
                     goal.transform.position, distance);
                 anim.speed = 3f;
                 moveUp.superados = 4;
+            }
+            else
+            {
+                Failed();
             }
         } else if(scene.name == "Level2Scene")
         {
@@ -335,6 +346,10 @@ public class Level3Controls : MonoBehaviour
                     //goal.transform.position.y, goal.transform.position.z);
                 anim.speed = 3f;
                 moveUp.superados = 2;
+            }
+            else
+            {
+                Failed();
             }
         } else if(scene.name == "Level5Scene")
         {
@@ -354,6 +369,10 @@ public class Level3Controls : MonoBehaviour
                 anim.speed = 3f;
                 moveUp.superados = 5;
             }
+            else
+            {
+                Failed();
+            }
         } else if(scene.name == "Level6Scene")
         {
             for(int i = 0; i < nmovements.Length; i++)
@@ -367,6 +386,10 @@ public class Level3Controls : MonoBehaviour
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distance);
                 anim.speed = 3f;
+            }
+            else
+            {
+                Failed();
             }
         }
 
@@ -394,5 +417,14 @@ public class Level3Controls : MonoBehaviour
         }
     }
 
+    public void Failed()
+    {
+        failed.speed = 1f;
+    }
+
+    public void ResetAnim()
+    {
+        failed.speed = 0f;
+    }
 
 }

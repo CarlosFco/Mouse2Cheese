@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 14 11:04:46 CET 2020
+#Tue Jan 14 11:32:28 CET 2020
 2.path=bin/Data/Managed/System.Net.Http.dll
 14.set=ASSET
 107.baseType=DIRECTORY
