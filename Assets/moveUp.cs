@@ -326,6 +326,11 @@ public class moveUp : MonoBehaviour
         SceneManager.LoadScene("Level5Question", LoadSceneMode.Single);
     }
 
+    public void SixthLevelDone()
+    {
+        SceneManager.LoadScene("Level6Question", LoadSceneMode.Single);
+    }
+
     public void MoveGeneral()
     {
         foreach(int v in nmovements)

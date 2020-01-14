@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 1519744389}
   - component: {fileID: 1519744388}
   m_Layer: 0
-  m_Name: Level4QuestionPNG
+  m_Name: Level5QuestionPNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

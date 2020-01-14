@@ -69,6 +69,9 @@ public class Level3Controls : MonoBehaviour
     public Animator fire3;
     public Animator fire4;
 
+    public GameObject failedsolution;
+    public Animator failed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -160,6 +163,7 @@ public class Level3Controls : MonoBehaviour
         fire2.speed = 0f;
         fire3.speed = 0f;
         fire4.speed = 0f;
+
     }
 
     // Update is called once per frame
@@ -389,4 +393,6 @@ public class Level3Controls : MonoBehaviour
             return false;
         }
     }
+
+
 }

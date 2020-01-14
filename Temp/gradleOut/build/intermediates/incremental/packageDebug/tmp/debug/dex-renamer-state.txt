@@ -1,4 +1,4 @@
-#Mon Jan 13 18:56:59 CET 2020
+#Tue Jan 14 11:04:45 CET 2020
 base.0=/Users/carlosfrancisco/Documents/GitHub/Mouse2Cheese/Temp/gradleOut/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

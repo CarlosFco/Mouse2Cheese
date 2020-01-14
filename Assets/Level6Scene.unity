@@ -260,6 +260,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &18549394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,6 +830,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &351212057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2024,6 +2028,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedsolution: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1130830437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2580,6 +2586,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedsolution: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1289830252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2925,6 +2933,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1421868240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2994,7 +3004,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1421868239}
-        m_MethodName: LevelDone
+        m_MethodName: SixthLevelDone
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3342,6 +3352,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedsolution: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1700559383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3697,6 +3709,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedsolution: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1954297733
 MonoBehaviour:
   m_ObjectHideFlags: 0

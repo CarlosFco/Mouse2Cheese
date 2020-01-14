@@ -18,14 +18,20 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Level3Question.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
 - path: Assets/level4Scene.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/Level5Scene.unity
+- path: Assets/Level4Question.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/Level5Scene.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Level5Question.unity
+  isLoaded: 1
+  isActive: 1
 - path: Assets/Level6Scene.unity
   isLoaded: 0
   isActive: 0
