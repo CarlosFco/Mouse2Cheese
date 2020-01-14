@@ -18,4 +18,9 @@ public class startGame : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
+
+    public void GoHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlayScreen", LoadSceneMode.Single);
+    }
 }

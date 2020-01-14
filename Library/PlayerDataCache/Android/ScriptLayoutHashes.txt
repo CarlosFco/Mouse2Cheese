@@ -2,19 +2,8 @@ Android
 PlayerPath?
 /Users/carlosfrancisco/Documents/TFGproject.apk
 SceneListBegin?
-Assets/StartScreen.unity
 Assets/ChooseWay.unity
-Assets/Reco.unity
-Assets/Level1Scene.unity
-Assets/Level2Scene.unity
-Assets/level3Scene.unity
-Assets/Level3Question.unity
-Assets/level4Scene.unity
-Assets/Level4Question.unity
-Assets/Level5Scene.unity
-Assets/Level5Question.unity
-Assets/Level6Scene.unity
-Assets/Level6Question.unity
+Assets/HowToPlayScreen.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f VuforiaScripts.dll:.BoundingBoxRenderer
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
