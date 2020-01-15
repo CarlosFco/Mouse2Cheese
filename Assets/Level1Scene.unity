@@ -735,6 +735,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &550432265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,6 +1499,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &1091800665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,6 +2041,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &1336165313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2202,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1336165319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,6 +2518,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &1574515994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,6 +2893,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!1 &1877661096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,6 +3147,8 @@ MonoBehaviour:
   fire2: {fileID: 0}
   fire3: {fileID: 0}
   fire4: {fileID: 0}
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
 --- !u!114 &1917703407
 MonoBehaviour:
   m_ObjectHideFlags: 0

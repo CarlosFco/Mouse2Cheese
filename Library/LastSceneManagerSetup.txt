@@ -4,6 +4,9 @@ sceneSetups:
   isActive: 0
 - path: Assets/ChooseWay.unity
   isLoaded: 1
+  isActive: 0
+- path: Assets/HowToPlayScreen.unity
+  isLoaded: 1
   isActive: 1
 - path: Assets/Reco.unity
   isLoaded: 0
