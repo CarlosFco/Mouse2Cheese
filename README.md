@@ -8,4 +8,6 @@ A simple game made in Unity and Vuforia to teach kids (and not kids) computation
 3. Introduction to loops.
 4. Loop level.
 5. Introduction to decisions and planification.
-6. Complex level with multiple ways.
+6. Complex level with multiple path.
+
+Levels about loops have a question about the repeated pattern. For its part, levels with decisions asks which one was the shortest path.
