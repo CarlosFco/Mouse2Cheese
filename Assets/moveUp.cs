@@ -41,8 +41,8 @@ public class moveUp : MonoBehaviour
     public static int[] nmovements;
 
     //testing in app
-    public static Text texto;
-    public static Text textoCont;
+    //public static Text texto;
+    //public static Text textoCont;
 
     public static GameObject direction1;
     public static GameObject direction2;
@@ -145,19 +145,19 @@ public class moveUp : MonoBehaviour
         for (int i = 0; i < nmovements.Length; i++)
             nmovements[i] = -1;
 
-        texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
-        texto.text = nmovements[0].ToString() +
-            nmovements[1].ToString() +
-            nmovements[2].ToString() +
-            nmovements[3].ToString() +
-            nmovements[4].ToString() +
-            nmovements[5].ToString() +
-            nmovements[6].ToString() +
-            nmovements[7].ToString() +
-            nmovements[8].ToString() +
-            nmovements[9].ToString();
-        textoCont = GameObject.Find("Canvas/TextCont").GetComponent<Text>();
-        textoCont.text = (up == null).ToString();
+        //texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
+        //texto.text = nmovements[0].ToString() +
+        //    nmovements[1].ToString() +
+        //    nmovements[2].ToString() +
+        //    nmovements[3].ToString() +
+         //   nmovements[4].ToString() +
+           // nmovements[5].ToString() +
+           // nmovements[6].ToString() +
+           // nmovements[7].ToString() +
+           // nmovements[8].ToString() +
+          //  nmovements[9].ToString();
+       // textoCont = GameObject.Find("Canvas/TextCont").GetComponent<Text>();
+       // textoCont.text = (up == null).ToString();
 
         direction1 = GameObject.Find("direction1");
         direction2 = GameObject.Find("direction2");
@@ -205,17 +205,17 @@ public class moveUp : MonoBehaviour
             fire3.speed = 1f;
             fire4.speed = 1f;
         }
-        texto.text = nmovements[0].ToString() +
-            nmovements[1].ToString() +
-            nmovements[2].ToString() +
+        //texto.text = nmovements[0].ToString() +
+        //    nmovements[1].ToString() +
+        /*    nmovements[2].ToString() +
             nmovements[3].ToString() +
             nmovements[4].ToString() +
             nmovements[5].ToString() +
             nmovements[6].ToString() +
             nmovements[7].ToString() +
             nmovements[8].ToString() +
-            nmovements[9].ToString();
-        textoCont.text = (solution == nmovements).ToString();
+            nmovements[9].ToString();*/
+        //textoCont.text = (solution == nmovements).ToString();
 
     }
 
