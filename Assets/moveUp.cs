@@ -34,7 +34,6 @@ public class moveUp : MonoBehaviour
     public Button ready;    
     public Button upInter;             //to make the butons not interactables for tutorial
     public Button leftInter;
-    //public Button downInter;
     public Button rightInter;
 
     private int cont;
@@ -108,10 +107,6 @@ public class moveUp : MonoBehaviour
         fire3.speed = 0f;
         fire4.speed = 0f;
 
-        //failedoption = GameObject.Find("Failed");
-        //failed = failedoption.GetComponent<Animator>();
-        //failed.speed = 0f;
-
         waypoint0 = GameObject.Find("Waypoint0");
         waypoint1 = GameObject.Find("Waypoint1");
         waypoint2 = GameObject.Find("Waypoint2");
@@ -120,9 +115,6 @@ public class moveUp : MonoBehaviour
         upBtn = GameObject.Find("Canvas/upBtn");
         upInter = upBtn.GetComponent<Button>();
 
-        //downBtn = GameObject.Find("Canvas/downBtn");
-        //downInter = downBtn.GetComponent<Button>();
-        //downInter.interactable = false;
 
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
@@ -146,18 +138,8 @@ public class moveUp : MonoBehaviour
             nmovements[i] = -1;
 
         texto = GameObject.Find("Canvas/Text").GetComponent<Text>();
-        //texto.text = nmovements[0].ToString() +
-        //    nmovements[1].ToString() +
-        //    nmovements[2].ToString() +
-        //    nmovements[3].ToString() +
-         //   nmovements[4].ToString() +
-           // nmovements[5].ToString() +
-           // nmovements[6].ToString() +
-           // nmovements[7].ToString() +
-           // nmovements[8].ToString() +
-          //  nmovements[9].ToString();
+
        textoCont = GameObject.Find("Canvas/TextCont").GetComponent<Text>();
-       // textoCont.text = (up == null).ToString();
 
         direction1 = GameObject.Find("direction1");
         direction2 = GameObject.Find("direction2");
@@ -170,7 +152,6 @@ public class moveUp : MonoBehaviour
         direction9 = GameObject.Find("direction9");
 
         up = Resources.Load<Sprite>("UpPNG");
-        //down = Resources.Load<Sprite>("DownPNG");
         left = Resources.Load<Sprite>("rotatePNG");
         right = Resources.Load<Sprite>("rotateReversePNG");
 
@@ -205,24 +186,12 @@ public class moveUp : MonoBehaviour
             fire3.speed = 1f;
             fire4.speed = 1f;
         }
-        //texto.text = nmovements[0].ToString() +
-        //    nmovements[1].ToString() +
-        /*    nmovements[2].ToString() +
-            nmovements[3].ToString() +
-            nmovements[4].ToString() +
-            nmovements[5].ToString() +
-            nmovements[6].ToString() +
-            nmovements[7].ToString() +
-            nmovements[8].ToString() +
-            nmovements[9].ToString();*/
-        //textoCont.text = (solution == nmovements).ToString();
 
     }
 
 
     public void MoveUpFunc()
     {
-        //if (character.transform.position.Equals(waypoint1.transform.position)) //from waypont1 to waypont2
         if (Compare(waypoint1, character))
         {
             float distance = waypoint2.transform.position.y - character.transform.position.y;
@@ -231,7 +200,6 @@ public class moveUp : MonoBehaviour
             character.transform.position.Set(waypoint2.transform.position.x,
                 waypoint2.transform.position.y, waypoint2.transform.position.z);
         }
-        //else if (character.transform.position.Equals(waypoint0.transform.position)) //from waypont0 to waypoint1
         else if (Compare(waypoint0, character))
         {
             float distance = waypoint1.transform.position.y - character.transform.position.y;
@@ -242,33 +210,9 @@ public class moveUp : MonoBehaviour
         } //there's no more way up
     }
 
-    /*public void MoveDownFunc()
-    {
-        //if(character.transform.position.Equals(waypoint1.transform.position)) //from waypoint1 to waypoint0
-        //{
-        if(Compare(waypoint1, character))
-        { 
-            float distance =character.transform.position.y - waypoint0.transform.position.y;
-            character.transform.position = Vector3.MoveTowards(character.transform.position, waypoint0.transform.position,
-                distance);
-            character.transform.position.Set(waypoint0.transform.position.x,
-                waypoint0.transform.position.y, waypoint0.transform.position.z);
-        }
-        //else if(character.transform.position.Equals(waypoint2.transform.position)) //from waypoint2 to waypoint1
-        else if(Compare(waypoint2, character))
-        {
-            float distance = character.transform.position.y - waypoint1 .transform.position.y;
-            character.transform.position = Vector3.MoveTowards(character.transform.transform.position,
-                waypoint1.transform.position, distance);
-            character.transform.position.Set(waypoint1.transform.position.x, waypoint1.transform.position.y,
-                waypoint1.transform.position.z);
-        } //there's no more way down
-    }*/
 
     public void MoveLeftFunc()
     {
-        //if (character.transform.position.Equals(waypoint2.transform.position)) //from waypoint2 to waypoint3
-        //{
         if(Compare(waypoint2, character))
         {
             float distance = character.transform.position.x - waypoint3.transform.position.x;
@@ -381,10 +325,7 @@ public class moveUp : MonoBehaviour
         for (int i = 0; i < directions.Length; i++)
         {
             directions[i].GetComponent<SpriteRenderer>().sprite = null;
-        }
-
-        //if (!Compare(character, waypoint3))
-        
+        }        
     }
 
     public void UpBtnClick()
@@ -458,25 +399,6 @@ public class moveUp : MonoBehaviour
             leftInter.interactable = false;
         }
     }
-
-    /*public void DownBtnClick()
-    {
-        int i = 0;
-        while (directions[i].GetComponent<SpriteRenderer>().sprite != null)
-            i++;
-
-        if (i <= directions.Length)
-        {
-            var x = directions[i].GetComponent<SpriteRenderer>();
-            x.sprite = down;
-        }
-
-        int j = 0;
-        while (nmovements[j] != -1)
-            j++;
-        if (j <= nmovements.Length)
-            nmovements[j] = 2;
-    }*/
 
     public void RigthBtnClick()
     {

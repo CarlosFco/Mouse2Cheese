@@ -137,10 +137,6 @@ public class Level3Controls : MonoBehaviour
         upInter = upBtn.GetComponent<Button>();
         upInter.interactable = true;
 
-        /*downBtn = GameObject.Find("Canvas/downBtn");
-        downInter = downBtn.GetComponent<Button>();
-        downInter.interactable = true;*/
-
         leftBtn = GameObject.Find("Canvas/leftBtn");
         leftInter = leftBtn.GetComponent<Button>();
         leftInter.interactable = true;
@@ -175,19 +171,6 @@ public class Level3Controls : MonoBehaviour
         float distance = character.transform.position.x - goal.transform.position.x;
         Scene scene = SceneManager.GetActiveScene();
 
-        //texto.text = (anim == null).ToString();
-        /*texto.text = solution2[0].ToString() +
-            solution2[1].ToString() +
-            solution2[2].ToString() +
-            solution2[3].ToString() +
-            solution2[4].ToString() +
-            solution2[5].ToString() +
-            solution2[6].ToString() +
-            solution2[7].ToString() +
-            solution2[8].ToString() +
-            solution2[9].ToString() +
-            solution2[10].ToString() +
-            solution2[11].ToString();*/
         if (Compare(goal, character))
         {
             done.interactable = true;
@@ -301,8 +284,6 @@ public class Level3Controls : MonoBehaviour
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distanceX);
 
-                //character.transform.position.Set(goal.transform.position.x,
-                    //goal.transform.position.y, goal.transform.position.z);
                 anim.speed = 3f;
                 moveUp.superados = 3;
             }
@@ -342,8 +323,6 @@ public class Level3Controls : MonoBehaviour
                 float distance = goal.transform.position.y - character.transform.position.y;
                 character.transform.position = Vector3.MoveTowards(character.transform.position,
                     goal.transform.position, distance);
-                //character.transform.position.Set(goal.transform.position.x,
-                    //goal.transform.position.y, goal.transform.position.z);
                 anim.speed = 3f;
                 moveUp.superados = 2;
             }

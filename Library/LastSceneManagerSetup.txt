@@ -12,8 +12,8 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Level1Scene.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
 - path: Assets/Level2Scene.unity
   isLoaded: 0
   isActive: 0
@@ -21,8 +21,8 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Level3Question.unity
-  isLoaded: 0
-  isActive: 0
+  isLoaded: 1
+  isActive: 1
 - path: Assets/level4Scene.unity
   isLoaded: 0
   isActive: 0
