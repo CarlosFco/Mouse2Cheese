@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class moveUp : MonoBehaviour
 {
-    public static int superados;
+    public static int superados = 0;
 
     public float movementSpeed = 3.0f;
     public static int[] solution;
@@ -79,7 +79,7 @@ public class moveUp : MonoBehaviour
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
 
-        superados = 0;
+        //superados = 0;
 
         solution = new int[10] {0, 0, 1, 0, -1, -1, -1, -1, -1, -1 };
         isSolution = false;

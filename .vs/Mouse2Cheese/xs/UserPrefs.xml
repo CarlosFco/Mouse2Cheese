@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{D2A622E2-8ED2-853C-E7EB-A98D429F43BE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../ImageTarget/Assets/moveUp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Pantalla.cs">
     <Files>
       <File FileName="Assets/Pantalla.cs" Line="30" Column="6" />
       <File FileName="Assets/Level2Recognition.cs" />
       <File FileName="Assets/Level3Recognition.cs" />
-      <File FileName="Assets/level4Recognition.cs" />
       <File FileName="Assets/level5Recognition.cs" />
       <File FileName="Assets/level6Recognition.cs" />
       <File FileName="Assets/startGame.cs" />
       <File FileName="Assets/FailedController.cs" />
-      <File FileName="Assets/Level3Controls.cs" />
-      <File FileName="../../../ImageTarget/Assets/moveUp.cs" Line="9" Column="1" />
+      <File FileName="Assets/Level3Controls.cs" Line="226" Column="31" />
+      <File FileName="Assets/level4Recognition.cs" />
+      <File FileName="Assets/moveUp.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

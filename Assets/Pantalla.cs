@@ -4,6 +4,8 @@ using Vuforia;
 
 public class Pantalla : MonoBehaviour, ITrackableEventHandler
 {
+    // First level recognition
+
     TrackableBehaviour mTrackableBehaviour;
     // Start is called before the first frame update
     void Start()

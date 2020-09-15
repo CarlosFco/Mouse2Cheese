@@ -1,43 +1,43 @@
 sceneSetups:
 - path: Assets/StartScreen.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/ChooseWay.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/HowToPlayScreen.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Reco.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
-- path: Assets/Level1Scene.unity
-  isLoaded: 0
-  isActive: 0
+- path: Assets/Mouse2Cheese_Unity.unity
+  isLoaded: 1
+  isActive: 1
 - path: Assets/Level2Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/level3Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level3Question.unity
   isLoaded: 1
-  isActive: 1
+  isActive: 0
 - path: Assets/level4Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level4Question.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level5Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level5Question.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level6Scene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
 - path: Assets/Level6Question.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
