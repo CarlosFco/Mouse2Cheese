@@ -15,4 +15,14 @@ public class RedirectionController : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
+
+    public void ToRecognition()
+    {
+        SceneManager.LoadScene("Reco", LoadSceneMode.Single);
+    }
+
+    public void ToHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlayScreen", LoadSceneMode.Single);
+    }
 }
