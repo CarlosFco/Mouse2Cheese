@@ -63,8 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\arrayFunc.cs" />
-    <Compile Include="Assets\controls.cs" />
     <Compile Include="Assets\FailedController.cs" />
     <Compile Include="Assets\followThePath.cs" />
     <Compile Include="Assets\Level2Recognition.cs" />
@@ -75,8 +73,8 @@
     <Compile Include="Assets\level6Recognition.cs" />
     <Compile Include="Assets\moveUp.cs" />
     <Compile Include="Assets\Pantalla.cs" />
+    <Compile Include="Assets\RedirectionController.cs" />
     <Compile Include="Assets\startGame.cs" />
-    <Compile Include="Assets\visibleAgain.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
