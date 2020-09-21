@@ -25,4 +25,11 @@ public class RedirectionController : MonoBehaviour
     {
         SceneManager.LoadScene("HowToPlayScreen", LoadSceneMode.Single);
     }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
+
+    }
+
 }

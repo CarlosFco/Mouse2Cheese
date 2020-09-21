@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 289288255}
   - component: {fileID: 289288254}
   - component: {fileID: 289288253}
+  - component: {fileID: 289288257}
   m_Layer: 5
   m_Name: exitBtn
   m_TagString: Untagged
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289288251}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -373,7 +374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 289288253}
+      - m_Target: {fileID: 289288257}
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -419,6 +420,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289288251}
   m_CullTransparentMesh: 0
+--- !u!114 &289288257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289288251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304922516
 GameObject:
   m_ObjectHideFlags: 0
