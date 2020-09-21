@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\FailedController.cs" />
     <Compile Include="Assets\followThePath.cs" />
+    <Compile Include="Assets\Level1Recognition.cs" />
     <Compile Include="Assets\Level2Recognition.cs" />
     <Compile Include="Assets\Level3Controls.cs" />
     <Compile Include="Assets\Level3Recognition.cs" />

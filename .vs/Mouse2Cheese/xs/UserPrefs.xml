@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{D621EECB-0049-E062-694E-325DBC79E086}|">
   <MonoDevelop.Ide.ItemProperties.VuforiaEditorScripts PreferredExecutionTarget="7e95c603-2d2e-43c7-8fee-2f22e4372532" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RedirectionController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Pantalla.cs">
     <Files>
-      <File FileName="Assets/Pantalla.cs" Line="8" Column="1" />
+      <File FileName="Assets/Pantalla.cs" Line="4" Column="1" />
       <File FileName="Assets/Level2Recognition.cs" />
       <File FileName="Assets/Level3Recognition.cs" />
       <File FileName="Assets/level5Recognition.cs" />
@@ -11,8 +11,9 @@
       <File FileName="Assets/FailedController.cs" />
       <File FileName="Assets/Level3Controls.cs" />
       <File FileName="Assets/level4Recognition.cs" />
-      <File FileName="Assets/moveUp.cs" />
-      <File FileName="Assets/RedirectionController.cs" Line="24" Column="19" />
+      <File FileName="Assets/moveUp.cs" Line="421" Column="5" />
+      <File FileName="Assets/RedirectionController.cs" Line="33" Column="6" />
+      <File FileName="Assets/Level1Recognition.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

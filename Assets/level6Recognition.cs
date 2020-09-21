@@ -8,6 +8,14 @@ public class level6Recognition : MonoBehaviour, ITrackableEventHandler
 {
     TrackableBehaviour mTrackableBehaviour;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+        if (mTrackableBehaviour)
+            mTrackableBehaviour.RegisterTrackableEventHandler(this);
+    }
+
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
@@ -19,26 +27,8 @@ public class level6Recognition : MonoBehaviour, ITrackableEventHandler
         {
             print("PIERDE");
         }
-        else
-        {
-            print("COMIENZO");
-        }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (moveUp.superados != 500)
-        {
-            mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-            if (mTrackableBehaviour)
-                mTrackableBehaviour.RegisterTrackableEventHandler(this);
-        }
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
