@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21675451}
   - component: {fileID: 21675450}
+  - component: {fileID: 21675452}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -191,6 +192,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &21675452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21675449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4848d34de11cf467e8b7c108a637e783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firework1: {fileID: 0}
+  firework2: {fileID: 0}
+  firework3: {fileID: 0}
+  firework4: {fileID: 0}
+  fire1: {fileID: 0}
+  fire2: {fileID: 0}
+  fire3: {fileID: 0}
+  fire4: {fileID: 0}
 --- !u!1 &59714048
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +621,7 @@ GameObject:
   - component: {fileID: 550432266}
   - component: {fileID: 550432265}
   - component: {fileID: 550432264}
+  - component: {fileID: 550432267}
   m_Layer: 5
   m_Name: doneBtn
   m_TagString: Untagged
@@ -634,7 +656,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550432262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -688,6 +710,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ForceModuleActive: 0
+--- !u!114 &550432267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550432262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &550432268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,8 +762,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 550432264}
-        m_MethodName: LevelDone
+      - m_Target: {fileID: 550432267}
+        m_MethodName: FirstLevelCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1758,6 +1792,7 @@ GameObject:
   - component: {fileID: 1163891701}
   - component: {fileID: 1163891700}
   - component: {fileID: 1163891702}
+  - component: {fileID: 1163891703}
   m_Layer: 5
   m_Name: leftBtn
   m_TagString: Untagged
@@ -1825,7 +1860,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1163891702}
+      - m_Target: {fileID: 1163891703}
         m_MethodName: LeftBtnClick
         m_Mode: 1
         m_Arguments:
@@ -1906,7 +1941,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163891695}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -1932,6 +1967,27 @@ MonoBehaviour:
   fire4: {fileID: 0}
   failedoption: {fileID: 0}
   failed: {fileID: 0}
+--- !u!114 &1163891703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163891695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4972c655dfb244e7a67418bcf7de715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  rightInter: {fileID: 0}
+  upBtn: {fileID: 0}
+  leftBtn: {fileID: 0}
+  rightBtn: {fileID: 0}
+  anim: {fileID: 0}
+  done: {fileID: 0}
+  ready: {fileID: 0}
 --- !u!1 &1336165313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,18 +2069,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1336165316}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1336165318}
-        m_MethodName: RigthBtnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1336165316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2067,7 +2112,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336165313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -2263,6 +2308,7 @@ GameObject:
   - component: {fileID: 1437774318}
   - component: {fileID: 1437774317}
   - component: {fileID: 1437774320}
+  - component: {fileID: 1437774321}
   m_Layer: 5
   m_Name: readyBtn
   m_TagString: Untagged
@@ -2330,8 +2376,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1437774320}
-        m_MethodName: MoveGeneral
+      - m_Target: {fileID: 1437774321}
+        m_MethodName: CheckSolution
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2383,7 +2429,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437774315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -2409,6 +2455,27 @@ MonoBehaviour:
   fire4: {fileID: 0}
   failedoption: {fileID: 0}
   failed: {fileID: 0}
+--- !u!114 &1437774321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437774315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4972c655dfb244e7a67418bcf7de715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  rightInter: {fileID: 0}
+  upBtn: {fileID: 0}
+  leftBtn: {fileID: 0}
+  rightBtn: {fileID: 0}
+  anim: {fileID: 0}
+  done: {fileID: 0}
+  ready: {fileID: 0}
 --- !u!1 &1574515994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,6 +2705,7 @@ GameObject:
   - component: {fileID: 1864471051}
   - component: {fileID: 1864471050}
   - component: {fileID: 1864471053}
+  - component: {fileID: 1864471054}
   m_Layer: 5
   m_Name: exitBtn
   m_TagString: Untagged
@@ -2705,7 +2773,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1864471053}
+      - m_Target: {fileID: 1864471054}
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -2758,7 +2826,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864471048}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -2784,6 +2852,18 @@ MonoBehaviour:
   fire4: {fileID: 0}
   failedoption: {fileID: 0}
   failed: {fileID: 0}
+--- !u!114 &1864471054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864471048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877661096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +3058,7 @@ GameObject:
   - component: {fileID: 1917703410}
   - component: {fileID: 1917703406}
   - component: {fileID: 1917703412}
+  - component: {fileID: 1917703413}
   m_Layer: 5
   m_Name: upBtn
   m_TagString: Untagged
@@ -3012,7 +3093,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917703404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -3078,7 +3159,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1917703406}
+      - m_Target: {fileID: 1917703413}
         m_MethodName: UpBtnClick
         m_Mode: 1
         m_Arguments:
@@ -3170,6 +3251,27 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   delegates: []
+--- !u!114 &1917703413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917703404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4972c655dfb244e7a67418bcf7de715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upInter: {fileID: 0}
+  leftInter: {fileID: 0}
+  rightInter: {fileID: 0}
+  upBtn: {fileID: 0}
+  leftBtn: {fileID: 0}
+  rightBtn: {fileID: 0}
+  anim: {fileID: 0}
+  done: {fileID: 0}
+  ready: {fileID: 0}
 --- !u!1 &2023301506
 GameObject:
   m_ObjectHideFlags: 0

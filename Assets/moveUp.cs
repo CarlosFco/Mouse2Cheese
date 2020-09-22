@@ -176,7 +176,7 @@ public class moveUp : MonoBehaviour
     void Update()
    {
 
-        if (Compare(waypoint3, character))
+        /*if (Compare(waypoint3, character))
         {
             done.interactable = true;
             ready.interactable = false;
@@ -185,7 +185,7 @@ public class moveUp : MonoBehaviour
             fire2.speed = 1f;
             fire3.speed = 1f;
             fire4.speed = 1f;
-        }
+        }*/
 
     }
 

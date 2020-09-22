@@ -29,7 +29,11 @@ public class RedirectionController : MonoBehaviour
     public void Exit()
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
+    }
 
+    public void FirstLevelCompleted()
+    {
+        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
 
 }
