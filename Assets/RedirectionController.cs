@@ -26,12 +26,7 @@ public class RedirectionController : MonoBehaviour
         SceneManager.LoadScene("HowToPlayScreen", LoadSceneMode.Single);
     }
 
-    public void Exit()
-    {
-        SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
-    }
-
-    public void FirstLevelCompleted()
+    public void BackToChooseWay()
     {
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
