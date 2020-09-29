@@ -10,7 +10,10 @@ public class GeneralController : MonoBehaviour
 
     public static GameObject[] directions;
     public static int[] nmovements;
+
     public static int[] solution2;
+    public static int[] solution3;
+
     public static string sceneName;
 
     public static GameObject direction1;
@@ -57,6 +60,7 @@ public class GeneralController : MonoBehaviour
             nmovements[i] = -1;
 
         solution2 = new int[12] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1, -1, -1 };
+        solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1 };
 
         sceneName = SceneManager.GetActiveScene().name;
 
@@ -166,38 +170,46 @@ public class GeneralController : MonoBehaviour
 
     public void CheckSolution()
     {
-        bool sol = true;
-		switch (sceneName)
-		{
+        bool sol = false; 
+        switch (sceneName)
+        {
             case "Level2Scene":
-                for (int i = 0; i < 12; i++)
-                {
-                    if (nmovements[i] != solution2[i])
-                        sol = false;
-                }
-
-                if (sol)
-                {
-                    upInter.interactable = false;
-                    leftInter.interactable = false;
-                    rightInter.interactable = false;
-                    done.interactable = true;
-                    ready.interactable = false;
-                    launchFireworks = true;
-                    
-                    Debug.Log(rightInter.interactable == true);
-                }
-			    else
-				{
-                    AnimationController.lauchLevelFailed = true;
-                    for (int i = 0; i < directions.Length; i++)
-                        directions[i].GetComponent<SpriteRenderer>().sprite = null;
-                    for (int i = 0; i < nmovements.Length; i++)
-                        nmovements[i] = -1;
-                }
+                sol = isSol(solution2);
+                break;
+            case "level3Scene":
+                sol = isSol(solution3);
                 break;
         }
-        
-
+        if (sol)
+        {
+            upInter.interactable = false;
+            leftInter.interactable = false;
+            rightInter.interactable = false;
+            done.interactable = true;
+            ready.interactable = false;
+            launchFireworks = true;
+                   
+        }
+	    else
+		{
+            AnimationController.lauchLevelFailed = true;
+            for (int i = 0; i < directions.Length; i++)
+                directions[i].GetComponent<SpriteRenderer>().sprite = null;
+            for (int i = 0; i < nmovements.Length; i++)
+                nmovements[i] = -1;
+        }
     }
+        
+    public bool isSol(int[] sol)
+	{
+        bool isSol = true;
+
+        for (int i = 0; i < 12; i++)
+		{
+            if (nmovements[i] != sol[i])
+                isSol = false;
+		}
+
+        return isSol;
+	}
 }

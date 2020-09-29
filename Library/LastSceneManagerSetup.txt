@@ -42,5 +42,5 @@ sceneSetups:
   isLoaded: 1
   isActive: 0
 - path: Assets/Mouse2Cheese_Unity.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
