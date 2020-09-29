@@ -9,14 +9,15 @@
       <File FileName="Assets/level6Recognition.cs" />
       <File FileName="Assets/startGame.cs" />
       <File FileName="Assets/FailedController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Level3Controls.cs" />
+      <File FileName="Assets/Level3Controls.cs" Line="131" Column="72" />
       <File FileName="Assets/level4Recognition.cs" />
       <File FileName="Assets/moveUp.cs" />
-      <File FileName="Assets/RedirectionController.cs" />
+      <File FileName="Assets/RedirectionController.cs" Line="36" Column="47" />
       <File FileName="Assets/Level1Recognition.cs" />
       <File FileName="Assets/FirstLevelControls.cs" />
-      <File FileName="Assets/AnimationController.cs" />
-      <File FileName="Assets/GeneralController.cs" />
+      <File FileName="Assets/AnimationController.cs" Line="81" Column="51" />
+      <File FileName="Assets/GeneralController.cs" Line="177" Column="29" />
+      <File FileName="Assets/QuestionsController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

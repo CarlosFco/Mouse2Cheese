@@ -19,10 +19,10 @@ sceneSetups:
   isActive: 0
 - path: Assets/level3Scene.unity
   isLoaded: 1
-  isActive: 1
+  isActive: 0
 - path: Assets/Level3Question.unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1
 - path: Assets/level4Scene.unity
   isLoaded: 1
   isActive: 0
@@ -42,5 +42,5 @@ sceneSetups:
   isLoaded: 1
   isActive: 0
 - path: Assets/Mouse2Cheese_Unity.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0

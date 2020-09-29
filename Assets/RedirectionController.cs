@@ -31,4 +31,9 @@ public class RedirectionController : MonoBehaviour
         SceneManager.LoadScene("ChooseWay", LoadSceneMode.Single);
     }
 
+    public void ToLevel3Question()
+	{
+        SceneManager.LoadScene("Level3Question", LoadSceneMode.Single);
+    }
+
 }

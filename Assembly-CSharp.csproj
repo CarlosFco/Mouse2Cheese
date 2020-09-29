@@ -77,6 +77,7 @@
     <Compile Include="Assets\level6Recognition.cs" />
     <Compile Include="Assets\moveUp.cs" />
     <Compile Include="Assets\Pantalla.cs" />
+    <Compile Include="Assets\QuestionsController.cs" />
     <Compile Include="Assets\RedirectionController.cs" />
     <Compile Include="Assets\startGame.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

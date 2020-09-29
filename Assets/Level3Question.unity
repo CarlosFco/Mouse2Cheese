@@ -273,6 +273,8 @@ GameObject:
   - component: {fileID: 260568722}
   - component: {fileID: 260568721}
   - component: {fileID: 260568720}
+  - component: {fileID: 260568725}
+  - component: {fileID: 260568724}
   m_Layer: 0
   m_Name: Done
   m_TagString: Untagged
@@ -306,7 +308,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260568719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
   m_Name: 
@@ -377,6 +379,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &260568724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260568719}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e581516fb1c344608bebe522196bcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
+  doneoption: {fileID: 0}
+  done: {fileID: 0}
+--- !u!114 &260568725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260568719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &505018091
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +496,8 @@ GameObject:
   - component: {fileID: 508912567}
   - component: {fileID: 508912566}
   - component: {fileID: 508912568}
+  - component: {fileID: 508912569}
+  - component: {fileID: 508912570}
   m_Layer: 0
   m_Name: Failed
   m_TagString: Untagged
@@ -561,9 +593,37 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508912564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
+  doneoption: {fileID: 0}
+  done: {fileID: 0}
+--- !u!114 &508912569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912564}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &508912570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e581516fb1c344608bebe522196bcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   failedoption: {fileID: 0}
@@ -734,6 +794,7 @@ GameObject:
   - component: {fileID: 961865021}
   - component: {fileID: 961865020}
   - component: {fileID: 961865023}
+  - component: {fileID: 961865024}
   m_Layer: 5
   m_Name: option2
   m_TagString: Untagged
@@ -801,7 +862,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 961865023}
+      - m_Target: {fileID: 961865024}
         m_MethodName: Failed
         m_Mode: 1
         m_Arguments:
@@ -854,9 +915,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961865018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
+  doneoption: {fileID: 0}
+  done: {fileID: 0}
+--- !u!114 &961865024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961865018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e581516fb1c344608bebe522196bcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   failedoption: {fileID: 0}
@@ -876,6 +953,7 @@ GameObject:
   - component: {fileID: 1009761514}
   - component: {fileID: 1009761513}
   - component: {fileID: 1009761516}
+  - component: {fileID: 1009761517}
   m_Layer: 5
   m_Name: option1
   m_TagString: Untagged
@@ -943,7 +1021,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1009761516}
+      - m_Target: {fileID: 1009761517}
         m_MethodName: Done
         m_Mode: 1
         m_Arguments:
@@ -996,9 +1074,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009761511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
+  doneoption: {fileID: 0}
+  done: {fileID: 0}
+--- !u!114 &1009761517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009761511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e581516fb1c344608bebe522196bcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   failedoption: {fileID: 0}
@@ -1743,6 +1837,7 @@ GameObject:
   - component: {fileID: 1431508633}
   - component: {fileID: 1431508632}
   - component: {fileID: 1431508631}
+  - component: {fileID: 1431508635}
   m_Layer: 5
   m_Name: exitBtn
   m_TagString: Untagged
@@ -1777,7 +1872,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431508629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
   m_Name: 
@@ -1843,8 +1938,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1431508631}
-        m_MethodName: Exit
+      - m_Target: {fileID: 1431508635}
+        m_MethodName: BackToChooseWay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1889,6 +1984,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431508629}
   m_CullTransparentMesh: 0
+--- !u!114 &1431508635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431508629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64edc21e7d46540bfb721c90f97e53c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1486843070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2386,7 @@ GameObject:
   - component: {fileID: 1849704054}
   - component: {fileID: 1849704053}
   - component: {fileID: 1849704056}
+  - component: {fileID: 1849704057}
   m_Layer: 5
   m_Name: option3
   m_TagString: Untagged
@@ -2346,7 +2454,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1849704056}
+      - m_Target: {fileID: 1849704057}
         m_MethodName: Failed
         m_Mode: 1
         m_Arguments:
@@ -2399,9 +2507,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849704051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedoption: {fileID: 0}
+  failed: {fileID: 0}
+  doneoption: {fileID: 0}
+  done: {fileID: 0}
+--- !u!114 &1849704057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849704051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e581516fb1c344608bebe522196bcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   failedoption: {fileID: 0}
