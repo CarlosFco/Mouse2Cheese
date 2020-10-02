@@ -13,6 +13,9 @@ public class GeneralController : MonoBehaviour
 
     public static int[] solution2;
     public static int[] solution3;
+    public static int[] solution4;
+    public static int[] solution5;
+    public static int[] solution6;
 
     public static string sceneName;
 
@@ -61,6 +64,9 @@ public class GeneralController : MonoBehaviour
 
         solution2 = new int[12] { 0, 1, 0, 3, 0, 0, 3, 0, -1, -1, -1, -1 };
         solution3 = new int[12] { 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, -1 };
+        solution4 = new int[12] { 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, -1, -1 };
+        solution5 = new int[12] { 1, 0, 3, 0, 3, 0, -1, -1, -1, -1, -1, -1 };
+        solution6 = new int[12] { 0, 0, 1, 0, 3, 0, 3, 0, -1, -1, -1, -1 };
 
         sceneName = SceneManager.GetActiveScene().name;
 
@@ -178,6 +184,15 @@ public class GeneralController : MonoBehaviour
                 break;
             case "level3Scene":
                 sol = isSol(solution3);
+                break;
+            case "level4Scene":
+                sol = isSol(solution4);
+                break;
+            case "Level5Scene":
+                sol = isSol(solution5);
+                break;
+            case "Level6Scene":
+                sol = isSol(solution6);
                 break;
         }
         if (sol)
