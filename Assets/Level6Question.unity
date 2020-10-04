@@ -500,7 +500,6 @@ GameObject:
   - component: {fileID: 545560832}
   - component: {fileID: 545560831}
   - component: {fileID: 545560830}
-  - component: {fileID: 545560829}
   - component: {fileID: 545560833}
   m_Layer: 0
   m_Name: Failed
@@ -509,22 +508,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &545560829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545560828}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
-  doneoption: {fileID: 0}
-  done: {fileID: 0}
 --- !u!212 &545560830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -634,7 +617,6 @@ GameObject:
   - component: {fileID: 561201231}
   - component: {fileID: 561201230}
   - component: {fileID: 561201229}
-  - component: {fileID: 561201228}
   - component: {fileID: 561201232}
   m_Layer: 5
   m_Name: option2
@@ -663,22 +645,6 @@ RectTransform:
   m_AnchoredPosition: {x: -525, y: -100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &561201228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561201226}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
-  doneoption: {fileID: 0}
-  done: {fileID: 0}
 --- !u!114 &561201229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,7 +1069,6 @@ GameObject:
   - component: {fileID: 1789748545}
   - component: {fileID: 1789748544}
   - component: {fileID: 1789748543}
-  - component: {fileID: 1789748542}
   - component: {fileID: 1789748546}
   m_Layer: 5
   m_Name: exitBtn
@@ -1132,39 +1097,6 @@ RectTransform:
   m_AnchoredPosition: {x: 920, y: 420}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1789748542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789748540}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 3
-  isSolution: 0
-  upBtn: {fileID: 0}
-  leftBtn: {fileID: 0}
-  rightBtn: {fileID: 0}
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  anim: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1789748543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1273,7 +1205,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1809524806}
   - component: {fileID: 1809524805}
-  - component: {fileID: 1809524804}
   - component: {fileID: 1809524803}
   - component: {fileID: 1809524807}
   m_Layer: 0
@@ -1302,22 +1233,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1809524804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809524802}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
-  doneoption: {fileID: 0}
-  done: {fileID: 0}
 --- !u!212 &1809524805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1473,7 +1388,6 @@ GameObject:
   - component: {fileID: 1950328858}
   - component: {fileID: 1950328857}
   - component: {fileID: 1950328856}
-  - component: {fileID: 1950328855}
   - component: {fileID: 1950328859}
   m_Layer: 5
   m_Name: option1
@@ -1502,22 +1416,6 @@ RectTransform:
   m_AnchoredPosition: {x: 525, y: -100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1950328855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950328853}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f21d74e8d164536a2ff4117610082f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
-  doneoption: {fileID: 0}
-  done: {fileID: 0}
 --- !u!114 &1950328856
 MonoBehaviour:
   m_ObjectHideFlags: 0

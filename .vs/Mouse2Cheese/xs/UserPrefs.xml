@@ -1,19 +1,16 @@
 ﻿<Properties StartupConfiguration="{D621EECB-0049-E062-694E-325DBC79E086}|">
-  <MonoDevelop.Ide.ItemProperties.VuforiaEditorScripts PreferredExecutionTarget="d319472e-0ba4-4090-9b34-fc56a789c53a" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RedirectionController.cs">
+  <MonoDevelop.Ide.ItemProperties.VuforiaEditorScripts PreferredExecutionTarget="0bf9ceb8-e330-4e37-9184-d61e4fbe6002" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Level1Recognition.cs">
     <Files>
       <File FileName="Assets/Pantalla.cs" Line="27" Column="10" />
       <File FileName="Assets/Level2Recognition.cs" />
       <File FileName="Assets/Level3Recognition.cs" />
       <File FileName="Assets/level5Recognition.cs" />
       <File FileName="Assets/level6Recognition.cs" />
-      <File FileName="Assets/startGame.cs" />
-      <File FileName="Assets/FailedController.cs" />
-      <File FileName="Assets/Level3Controls.cs" />
       <File FileName="Assets/level4Recognition.cs" />
-      <File FileName="Assets/moveUp.cs" />
-      <File FileName="Assets/RedirectionController.cs" Line="36" Column="47" />
-      <File FileName="Assets/Level1Recognition.cs" />
+      <File FileName="Assets/moveUp.cs" Line="70" Column="27" />
+      <File FileName="Assets/RedirectionController.cs" />
+      <File FileName="Assets/Level1Recognition.cs" Line="1" Column="1" />
       <File FileName="Assets/FirstLevelControls.cs" />
       <File FileName="Assets/AnimationController.cs" />
       <File FileName="Assets/GeneralController.cs" />

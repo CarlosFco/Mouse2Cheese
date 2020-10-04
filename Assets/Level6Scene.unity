@@ -201,7 +201,6 @@ GameObject:
   - component: {fileID: 18549396}
   - component: {fileID: 18549395}
   - component: {fileID: 18549394}
-  - component: {fileID: 18549393}
   - component: {fileID: 18549397}
   m_Layer: 5
   m_Name: exitBtn
@@ -230,39 +229,6 @@ RectTransform:
   m_AnchoredPosition: {x: 920, y: 420}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &18549393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18549391}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 3
-  isSolution: 0
-  upBtn: {fileID: 0}
-  leftBtn: {fileID: 0}
-  rightBtn: {fileID: 0}
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  anim: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &18549394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,7 +751,6 @@ GameObject:
   - component: {fileID: 351212055}
   - component: {fileID: 351212058}
   - component: {fileID: 351212057}
-  - component: {fileID: 351212056}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -812,39 +777,6 @@ RectTransform:
   m_AnchoredPosition: {x: 544, y: 313}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &351212056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351212054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 3
-  isSolution: 0
-  upBtn: {fileID: 0}
-  leftBtn: {fileID: 0}
-  rightBtn: {fileID: 0}
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  anim: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &351212057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,7 +1466,6 @@ GameObject:
   - component: {fileID: 707244536}
   - component: {fileID: 707244535}
   - component: {fileID: 707244534}
-  - component: {fileID: 707244537}
   - component: {fileID: 707244538}
   m_Layer: 0
   m_Name: FailedLevel
@@ -1624,34 +1555,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &707244537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707244533}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d2fc52c84be4c599984ef85975dafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  downInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedsolution: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &707244538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2060,6 @@ GameObject:
   - component: {fileID: 1130830439}
   - component: {fileID: 1130830438}
   - component: {fileID: 1130830437}
-  - component: {fileID: 1130830436}
   - component: {fileID: 1130830443}
   m_Layer: 5
   m_Name: upBtn
@@ -2166,34 +2068,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1130830436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130830435}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d2fc52c84be4c599984ef85975dafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  downInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedsolution: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1130830437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +2584,6 @@ GameObject:
   - component: {fileID: 1289830254}
   - component: {fileID: 1289830253}
   - component: {fileID: 1289830252}
-  - component: {fileID: 1289830251}
   - component: {fileID: 1289830257}
   m_Layer: 5
   m_Name: rightBtn
@@ -2739,34 +2612,6 @@ RectTransform:
   m_AnchoredPosition: {x: 880, y: 50}
   m_SizeDelta: {x: 644, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1289830251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289830249}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d2fc52c84be4c599984ef85975dafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  downInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedsolution: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1289830252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,7 +2912,6 @@ GameObject:
   - component: {fileID: 1421868242}
   - component: {fileID: 1421868241}
   - component: {fileID: 1421868240}
-  - component: {fileID: 1421868239}
   - component: {fileID: 1421868245}
   m_Layer: 5
   m_Name: doneBtn
@@ -3096,39 +2940,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1421868239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421868237}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a1b4903d4524cf5abe3350a72cb169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 3
-  isSolution: 0
-  upBtn: {fileID: 0}
-  leftBtn: {fileID: 0}
-  rightBtn: {fileID: 0}
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  anim: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedoption: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1421868240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3504,7 +3315,6 @@ GameObject:
   - component: {fileID: 1700559385}
   - component: {fileID: 1700559384}
   - component: {fileID: 1700559383}
-  - component: {fileID: 1700559382}
   - component: {fileID: 1700559388}
   m_Layer: 5
   m_Name: leftBtn
@@ -3533,34 +3343,6 @@ RectTransform:
   m_AnchoredPosition: {x: 553, y: 50}
   m_SizeDelta: {x: 645, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1700559382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700559380}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d2fc52c84be4c599984ef85975dafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  downInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedsolution: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1700559383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3876,7 +3658,6 @@ GameObject:
   - component: {fileID: 1954297735}
   - component: {fileID: 1954297734}
   - component: {fileID: 1954297733}
-  - component: {fileID: 1954297732}
   - component: {fileID: 1954297736}
   m_Layer: 5
   m_Name: readyBtn
@@ -3905,34 +3686,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 275}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1954297732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954297730}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d2fc52c84be4c599984ef85975dafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: {fileID: 0}
-  ready: {fileID: 0}
-  upInter: {fileID: 0}
-  downInter: {fileID: 0}
-  leftInter: {fileID: 0}
-  rightInter: {fileID: 0}
-  firework1: {fileID: 0}
-  firework2: {fileID: 0}
-  firework3: {fileID: 0}
-  firework4: {fileID: 0}
-  fire1: {fileID: 0}
-  fire2: {fileID: 0}
-  fire3: {fileID: 0}
-  fire4: {fileID: 0}
-  failedsolution: {fileID: 0}
-  failed: {fileID: 0}
 --- !u!114 &1954297733
 MonoBehaviour:
   m_ObjectHideFlags: 0
