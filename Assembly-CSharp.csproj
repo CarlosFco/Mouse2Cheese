@@ -63,17 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimationController.cs" />
-    <Compile Include="Assets\FirstLevelControls.cs" />
-    <Compile Include="Assets\GeneralController.cs" />
-    <Compile Include="Assets\Level1Recognition.cs" />
-    <Compile Include="Assets\Level2Recognition.cs" />
-    <Compile Include="Assets\Level3Recognition.cs" />
-    <Compile Include="Assets\level4Recognition.cs" />
-    <Compile Include="Assets\level5Recognition.cs" />
-    <Compile Include="Assets\level6Recognition.cs" />
-    <Compile Include="Assets\QuestionsController.cs" />
-    <Compile Include="Assets\RedirectionController.cs" />
+    <Compile Include="Assets\Controllers\AnimationController.cs" />
+    <Compile Include="Assets\Controllers\FirstLevelControls.cs" />
+    <Compile Include="Assets\Controllers\GeneralController.cs" />
+    <Compile Include="Assets\Controllers\QuestionsController.cs" />
+    <Compile Include="Assets\Controllers\RedirectionController.cs" />
+    <Compile Include="Assets\Recognitions\Level1Recognition.cs" />
+    <Compile Include="Assets\Recognitions\Level2Recognition.cs" />
+    <Compile Include="Assets\Recognitions\Level3Recognition.cs" />
+    <Compile Include="Assets\Recognitions\level4Recognition.cs" />
+    <Compile Include="Assets\Recognitions\level5Recognition.cs" />
+    <Compile Include="Assets\Recognitions\level6Recognition.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />

@@ -1,20 +1,8 @@
 ﻿<Properties StartupConfiguration="{D621EECB-0049-E062-694E-325DBC79E086}|">
-  <MonoDevelop.Ide.ItemProperties.VuforiaEditorScripts PreferredExecutionTarget="0bf9ceb8-e330-4e37-9184-d61e4fbe6002" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Level1Recognition.cs">
+  <MonoDevelop.Ide.ItemProperties.VuforiaEditorScripts PreferredExecutionTarget="7a29dd6b-4230-495d-8c9c-3498c14f4bb1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Controllers/FirstLevelControls.cs">
     <Files>
-      <File FileName="Assets/Pantalla.cs" Line="27" Column="10" />
-      <File FileName="Assets/Level2Recognition.cs" />
-      <File FileName="Assets/Level3Recognition.cs" />
-      <File FileName="Assets/level5Recognition.cs" />
-      <File FileName="Assets/level6Recognition.cs" />
-      <File FileName="Assets/level4Recognition.cs" />
-      <File FileName="Assets/moveUp.cs" Line="70" Column="27" />
-      <File FileName="Assets/RedirectionController.cs" />
-      <File FileName="Assets/Level1Recognition.cs" Line="1" Column="1" />
-      <File FileName="Assets/FirstLevelControls.cs" />
-      <File FileName="Assets/AnimationController.cs" />
-      <File FileName="Assets/GeneralController.cs" />
-      <File FileName="Assets/QuestionsController.cs" Line="40" Column="1" />
+      <File FileName="Assets/Controllers/FirstLevelControls.cs" Line="155" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

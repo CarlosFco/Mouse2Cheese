@@ -13,7 +13,7 @@ sceneSetups:
   isActive: 0
 - path: Assets/Level1Scene.unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1
 - path: Assets/Level2Scene.unity
   isLoaded: 1
   isActive: 0
@@ -37,7 +37,7 @@ sceneSetups:
   isActive: 0
 - path: Assets/Level6Scene.unity
   isLoaded: 1
-  isActive: 1
+  isActive: 0
 - path: Assets/Level6Question.unity
   isLoaded: 1
   isActive: 0

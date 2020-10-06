@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/carlosfrancisco/Downloads/Mouse2Cheese.apk
+/Users/carlosfrancisco/Downloads/Mouse2Cheese_test.apk
 SceneListBegin?
 Assets/StartScreen.unity
 Assets/ChooseWay.unity
