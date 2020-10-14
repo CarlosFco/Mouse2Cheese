@@ -1,5 +1,7 @@
 # Mouse2Cheese
 
+![Mouse 2 Cheese logo](https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png)
+
 A simple game made in Unity and Vuforia to teach kids (and not kids) computational thinking.
 
 ### Levels
@@ -11,3 +13,5 @@ A simple game made in Unity and Vuforia to teach kids (and not kids) computation
 6. Complex level with multiple path.
 
 Levels about loops have a question about the repeated pattern. For its part, levels with decisions asks which one was the shortest path.
+
+Enjoy!
