@@ -1,7 +1,5 @@
 # Mouse 2 Cheese
 
-![Mouse 2 Cheese logo](https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png)
-
 <img src="https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png" width="250" height="250" />
 
 A simple game made in Unity and Vuforia to teach kids (and not kids) computational thinking.
