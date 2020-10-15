@@ -1,6 +1,8 @@
-# Mouse2Cheese
+# Mouse 2 Cheese
 
 ![Mouse 2 Cheese logo](https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png)
+
+<img src="https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png" width="250" height="250" />
 
 A simple game made in Unity and Vuforia to teach kids (and not kids) computational thinking.
 
@@ -13,5 +15,7 @@ A simple game made in Unity and Vuforia to teach kids (and not kids) computation
 6. Complex level with multiple path.
 
 Levels about loops have a question about the repeated pattern. For its part, levels with decisions asks which one was the shortest path.
+
+To play, when app launches the camera, just aim to an image inside the [Scanning Resources folder](https://github.com/CarlosFco/Mouse2Cheese/tree/master/ScanningResources) and the app will load the level with that figure.
 
 Enjoy!
