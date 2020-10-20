@@ -1,4 +1,4 @@
-# Mouse 2 Cheese
+# Mouse2Cheese
 
 <img src="https://github.com/CarlosFco/Mouse2Cheese/blob/master/Assets/xxxdpi.png" width="250" height="250" />
 
